@@ -1,5 +1,108 @@
-import React,{useState}from'react';import{createRoot}from'react-dom/client';import{ArrowDown,ArrowUpRight,Compass,Github,Menu,Network,X}from'lucide-react';import'./styles.css';
-const SOURCE='https://github.com/rllibo833-sudo/kawasan-masjid-1000ha',PROBLEM_SOLVER='https://rllibo833-sudo.github.io/kawasan-masjid-1000ha/problem-solver.html',CAPABILITY='https://github.com/rllibo833-sudo/kawasan-masjid-1000ha/issues/new?template=request-capability.md',EMAIL='mailto:fadlibo833@gmail.com',MEMORY='https://github.com/rllibo833-sudo/Founder-ai-memory';
-const journey=[['01','DREAM','A long-term question about how a place can make human life better.','Pertanyaan jangka panjang tentang bagaimana sebuah kawasan dapat membuat kehidupan manusia lebih baik.'],['02','UNDERSTAND','Research, evidence, conversations, and mapping clarify what is actually needed.','Riset, bukti, percakapan, dan pemetaan membantu memahami kebutuhan nyata.'],['03','DESIGN','Ideas become blueprints, systems, spaces, and experiments that can be tested.','Ide diterjemahkan menjadi blueprint, sistem, ruang, dan eksperimen yang dapat diuji.'],['04','BUILD','The most ready part is built first—small, real, measurable, then expanded.','Bagian yang paling siap diwujudkan dibangun lebih dahulu—kecil, nyata, terukur, lalu berkembang.']];
-const pillars=[['01','Worship & civic life','Mosque-centered community life, public space, and services.','Kehidupan masyarakat, ruang publik, dan pelayanan berpusat pada masjid.'],['02','Education & research','Knowledge, skills, research, and open learning.','Pengetahuan, keterampilan, riset, dan pembelajaran terbuka.'],['03','Food & agriculture','Food systems, farming, livestock, and local resilience.','Pangan, pertanian, peternakan, dan ketahanan lokal.'],['04','Water & ecology','Water, conservation, landscape, and ecological systems.','Air, konservasi, lanskap, dan sistem ekologis.'],['05','Energy & utilities','Energy and utilities developed and tested progressively.','Energi dan utilitas yang dikembangkan dan diuji bertahap.'],['06','Local economy','MSMEs, jobs, services, and community-based economic activity.','UMKM, pekerjaan, jasa, dan aktivitas ekonomi masyarakat.'],['07','Digital & data','Registry, GIS, monitoring, and digital infrastructure.','Registry, GIS, monitoring, dan infrastruktur digital.'],['08','Circular systems','Materials, waste reduction, reuse, and circular flows.','Material, pengurangan limbah, penggunaan kembali, dan sistem sirkular.']];
-function App(){const[toggle,setToggle]=useState(false),[lang,setLang]=useState('en');const en=lang==='en';const go=id=>{document.getElementById(id)?.scrollIntoView({behavior:'smooth'});setToggle(false)};return <div><header><a className="brand" href="#top"><span>KM</span><b>Kawasan Masjid<small>1.000 Ha · Open Project</small></b></a><button className="mobile" onClick={()=>setToggle(!toggle)}>{toggle?<X/>:<Menu/>}</button><nav className={toggle?'show':''}>{[['story',en?'Story':'Cerita'],['why',en?'Why':'Mengapa'],['ecosystem',en?'Ecosystem':'Ekosistem'],['journey',en?'Journey':'Perjalanan'],['experience',en?'Experience':'Bayangkan'],['participate',en?'Explore':'Jelajahi']].map(x=><button key={x[0]} onClick={()=>go(x[0])}>{x[1]}</button>)}<button onClick={()=>setLang(en?'id':'en')} className="lang">{en?'ID':'EN'}</button></nav></header><main id="top"><section id="story" className="hero"><i/><label>● OPEN PROJECT · EARLY DEVELOPMENT</label><h1>{en?'A long-term vision, built one real step at a time.':'Visi jangka panjang, dibangun satu langkah nyata pada satu waktu.'}</h1><p>{en?'An open project for research, planning, collaboration, and gradual development of an integrated mosque-centered kawasan.':'Proyek terbuka untuk riset, perencanaan, kolaborasi, dan pengembangan bertahap kawasan terpadu berbasis masjid.'}</p><div className="actions"><a className="primary" href={PROBLEM_SOLVER} target="_blank" rel="noreferrer">{en?'Try the Problem Solver':'Coba Problem Solver'} <ArrowUpRight/></a><a className="ghost" href={SOURCE} target="_blank" rel="noreferrer">Project OS <Github/></a></div><div className="stats"><span><b>1,000</b>hectares imagined</span><span><b>01</b>shared vision</span><span><b>∞</b>possibilities</span></div></section><section id="why"><label>01 / WHY THIS EXISTS</label><h2>{en?'More than a place. A system for human life.':'Bukan hanya tentang membangun tempat. Ini tentang membangun kehidupan.'}</h2><div className="two"><div><p>{en?'Many places are planned building by building. This vision starts with a different question: ':'Banyak kawasan dibangun dari bangunan ke bangunan. Visi ini dimulai dari pertanyaan yang berbeda: '}<b>{en?'how can a place help people worship, learn, work, grow, raise families, and live alongside nature?':'bagaimana sebuah kawasan dapat membantu manusia beribadah, belajar, bekerja, bertumbuh, berkeluarga, dan hidup berdampingan dengan alam?'}</b></p><p>{en?'The mosque is an orientation point—not only a building, but a connector between people, knowledge, services, economy, and ecology.':'Masjid menjadi titik orientasi—bukan hanya sebuah bangunan, tetapi ruang yang menghubungkan manusia, pengetahuan, pelayanan, ekonomi, dan lingkungan.'}</p></div><div className="quote">“Sebuah kawasan yang baik tidak hanya terlihat indah dari jauh. Ia terasa hidup ketika manusia berada di dalamnya.”</div></div></section><section id="ecosystem" className="cream"><label>02 / THE ECOSYSTEM</label><h2>{en?'Eight systems designed to work together.':'Delapan sistem yang dirancang untuk bekerja bersama.'}</h2><div className="pillars">{pillars.map(x=><article key={x[0]}><small>{x[0]}</small><h3>{x[1]}</h3><p>{en?x[2]:x[3]}</p></article>)}</div></section><section id="journey"><label>03 / THE JOURNEY</label><h2>{en?'A large vision is not built in one leap.':'Visi besar tidak dibangun dalam satu lompatan.'}</h2><p>{en?'It moves from an idea to something that can be seen, tested, measured, and eventually inhabited.':'Ia bergerak dari gagasan menuju sesuatu yang bisa dilihat, diuji, dan akhirnya dihuni.'}</p><div className="journey">{journey.map(x=><article key={x[0]}><small>{x[0]}</small><b>{x[1]}</b><p>{en?x[2]:x[3]}</p></article>)}</div></section><section id="experience" className="experience"><div className="experienceInner"><label>04 / IMAGINE BEING THERE</label><h2>{en?'Imagine a morning here.':'Bayangkan suatu pagi di kawasan ini.'}</h2><div className="storyline"><p>{en?'The call to prayer becomes part of the morning rhythm. People walk to the mosque. Children learn. Farmers work in the fields. Families meet in open spaces. A small shop opens its doors.':'Suara adzan menjadi bagian dari ritme pagi. Orang berjalan menuju masjid. Anak-anak belajar. Petani bekerja di kebun. Keluarga bertemu di ruang terbuka. Sebuah kedai kecil mulai membuka pintunya.'}</p><p>{en?'Elsewhere, rainwater is collected. Energy is used wisely. Harvest moves toward kitchens, markets, and dining tables. Knowledge moves between generations.':'Di tempat lain, air hujan dikumpulkan. Energi digunakan dengan bijak. Hasil kebun bergerak menuju dapur, pasar, dan meja makan. Pengetahuan berpindah dari satu generasi ke generasi berikutnya.'}</p><p>{en?'Technology works behind the scenes—not to replace people, but to make the kawasan easier to understand, operate, and improve.':'Teknologi bekerja di belakang layar—bukan untuk menggantikan manusia, tetapi untuk membuat kawasan lebih mudah dipahami dan dikelola.'}</p></div></div></section><section id="participate" className="dark"><label>05 / EXPLORE THE JOURNEY</label><h2>{en?'This is only the beginning.':'Ini baru awal dari sebuah perjalanan.'}</h2><p>{en?'If you have a concrete problem, capability, research interest, pilot idea, or collaboration opportunity, the Project OS is the public entry point.':'Jika Anda memiliki kebutuhan, capability, research interest, pilot idea, atau peluang kolaborasi yang konkret, Project OS adalah pintu masuk publik untuk memahami arah proyek ini.'}</p><div className="actions"><a className="primary" href={PROBLEM_SOLVER} target="_blank" rel="noreferrer">{en?'Try Problem Solver':'Coba Problem Solver'} <ArrowUpRight/></a><a className="ghost" href={CAPABILITY} target="_blank" rel="noreferrer">{en?'Request a capability':'Ajukan kebutuhan'} <ArrowUpRight/></a><a className="ghost" href={EMAIL}>{en?'Contact Founder':'Hubungi Founder'} <Network/></a><a className="ghost" href={SOURCE} target="_blank" rel="noreferrer">Project OS <Github/></a></div><p className="inbound-note">{en?'Concrete requests can enter through the public capability form or Founder email. Every request is reviewed before engagement, pricing, or commitment. No claim is made before verification.':'Kebutuhan konkret dapat masuk melalui formulir capability publik atau email Founder. Setiap permintaan ditinjau sebelum engagement, harga, atau komitmen. Tidak ada klaim sebelum diverifikasi.'}</p></section></main><footer><div><b>Kawasan Masjid 1.000 Ha</b><p>{en?'Open project for research, development, validation, and gradual collaboration.':'Open project untuk riset, pengembangan, validasi, dan kolaborasi bertahap.'}</p></div><div className="links"><a href={SOURCE} target="_blank" rel="noreferrer"><Github/>Project OS</a><a href={MEMORY} target="_blank" rel="noreferrer"><Compass/>Founder AI</a></div></footer></div>}createRoot(document.getElementById('root')).render(<App/>);
+import React,{useState}from'react';
+import{createRoot}from'react-dom/client';
+import{ArrowUpRight,Menu,X}from'lucide-react';
+import'./styles.css';
+
+const CORE='https://rllibo833-sudo.github.io/kawasan-masjid-1000ha/';
+const REPO='https://github.com/rllibo833-sudo/kawasan-masjid-1000ha';
+const EMAIL='mailto:fadlibo833@gmail.com';
+
+const systems=[
+ ['01','Worship & civic life','A mosque-centered community with public space, services, and shared life.'],
+ ['02','Education & research','Knowledge, learning, research, and skills across generations.'],
+ ['03','Food & agriculture','Farming, livestock, food systems, and local resilience.'],
+ ['04','Water & ecology','Water, gardens, conservation, landscape, and ecological balance.'],
+ ['05','Energy & utilities','Practical infrastructure developed progressively and responsibly.'],
+ ['06','Local economy','MSMEs, work, services, trade, and community economic activity.'],
+ ['07','Digital ecosystem','Data, GIS, coordination, AI-assisted operations, and future applications.'],
+ ['08','Housing & public life','Homes, facilities, mobility, recreation, and shared spaces.']
+];
+
+function App(){
+ const[open,setOpen]=useState(false),[id,setId]=useState(false);
+ const t=(en,idn)=>id?idn:en;
+ const go=(anchor)=>{document.getElementById(anchor)?.scrollIntoView({behavior:'smooth'});setOpen(false)};
+ return <div>
+  <header>
+   <button className="brand" onClick={()=>go('top')}><span>KM</span><b>Kawasan Masjid<small>1.000 Ha · Open Project</small></b></button>
+   <button className="mobile" onClick={()=>setOpen(!open)}>{open?<X/>:<Menu/>}</button>
+   <nav className={open?'show':''}>
+    {[
+      ['vision',t('Vision','Visi')],
+      ['why',t('Why','Mengapa')],
+      ['ecosystem',t('Ecosystem','Ekosistem')],
+      ['journey',t('Journey','Perjalanan')],
+      ['imagine',t('Imagine','Bayangkan')],
+      ['explore',t('Explore','Jelajahi')]
+    ].map(([a,b])=><button key={a} onClick={()=>go(a)}>{b}</button>)}
+    <button className="lang" onClick={()=>setId(!id)}>{id?'EN':'ID'}</button>
+   </nav>
+  </header>
+
+  <main id="top">
+   <section id="vision" className="hero">
+    <label>● {t('OPEN PROJECT · LONG-TERM VISION','OPEN PROJECT · VISI JANGKA PANJANG')}</label>
+    <h1>{t('A mosque-centered community designed as one living ecosystem.','Kawasan berpusat pada masjid yang dirancang sebagai satu ekosistem kehidupan.')}</h1>
+    <p>{t('Kawasan Masjid 1.000 Ha is a long-term Islamic Eco-City vision. The work begins with research, design, digital coordination, and small verifiable steps toward real-world implementation.','Kawasan Masjid 1.000 Ha adalah visi jangka panjang Islamic Eco-City. Perjalanan dimulai dari riset, desain, koordinasi digital, dan langkah kecil yang dapat dibuktikan menuju realisasi nyata.')}</p>
+    <div className="actions">
+      <a className="primary" href={CORE}>{t('Explore the project','Jelajahi project')} <ArrowUpRight/></a>
+      <a className="ghost" href={REPO} target="_blank" rel="noreferrer">{t('View Project OS','Lihat Project OS')} <ArrowUpRight/></a>
+    </div>
+    <div className="stats"><span><b>1,000</b>hectares envisioned</span><span><b>08</b>connected systems</span><span><b>01</b>direction</span></div>
+   </section>
+
+   <section id="why">
+    <label>01 / {t('WHY THIS EXISTS','MENGAPA INI ADA')}</label>
+    <h2>{t('More than a place. A system for human life.','Bukan sekadar tempat. Sebuah sistem untuk kehidupan manusia.')}</h2>
+    <div className="two">
+      <div>
+       <p>{t('The vision starts with a simple question: how can a place help people worship, learn, work, raise families, care for nature, and build a resilient local economy together?','Visi ini dimulai dari pertanyaan sederhana: bagaimana sebuah kawasan membantu manusia beribadah, belajar, bekerja, berkeluarga, menjaga alam, dan membangun ekonomi lokal yang tangguh secara bersama?')}</p>
+       <p>{t('The mosque is an orientation point—not only a building, but a connector between people, knowledge, services, economy, ecology, and public life.','Masjid menjadi titik orientasi—bukan hanya bangunan, tetapi penghubung manusia, pengetahuan, layanan, ekonomi, ekologi, dan kehidupan publik.')}</p>
+      </div>
+      <div className="quote">{t('A good kawasan should feel alive when people are inside it—not only look impressive from a distance.','Kawasan yang baik harus terasa hidup ketika manusia berada di dalamnya—bukan hanya terlihat mengesankan dari kejauhan.')}</div>
+    </div>
+   </section>
+
+   <section id="ecosystem" className="cream">
+    <label>02 / {t('THE ECOSYSTEM','EKOSISTEM')}</label>
+    <h2>{t('Eight systems designed to reinforce one another.','Delapan sistem yang dirancang untuk saling memperkuat.')}</h2>
+    <div className="pillars">{systems.map(([n,a,b])=><article key={n}><small>{n}</small><h3>{a}</h3><p>{b}</p></article>)}</div>
+   </section>
+
+   <section id="journey">
+    <label>03 / {t('THE JOURNEY','PERJALANAN')}</label>
+    <h2>{t('A large vision is not built in one leap.','Visi besar tidak dibangun dalam satu lompatan.')}</h2>
+    <p>{t('The project moves from understanding to design, then to small things that can be tested, measured, and expanded only when they earn the right to grow.','Project bergerak dari pemahaman menuju desain, lalu ke hal-hal kecil yang dapat diuji dan diukur, kemudian diperluas hanya ketika memang layak berkembang.')}</p>
+    <div className="journey">
+      {[['01','UNDERSTAND','Research the place, people, constraints, and real needs.'],['02','DESIGN','Turn evidence into a coherent masterplan and system model.'],['03','TEST','Build the smallest useful digital or physical component.'],['04','GROW','Expand only what is supported by evidence and real value.']].map(([n,a,b])=><article key={n}><small>{n}</small><b>{t(a,a==='UNDERSTAND'?'PAHAMI':a==='DESIGN'?'RANCANG':a==='TEST'?'UJI':'KEMBANGKAN')}</b><p>{b}</p></article>)}
+    </div>
+   </section>
+
+   <section id="imagine" className="experience">
+    <div className="experienceInner">
+     <label>04 / {t('IMAGINE BEING THERE','BAYANGKAN BERADA DI SANA')}</label>
+     <h2>{t('Imagine a morning here.','Bayangkan suatu pagi di kawasan ini.')}</h2>
+     <div className="storyline">
+      <p>{t('The call to prayer becomes part of the morning rhythm. People walk to the mosque. Children learn. Farmers work. Families meet in open spaces. A small shop opens its doors.','Suara adzan menjadi bagian dari ritme pagi. Orang berjalan menuju masjid. Anak-anak belajar. Petani bekerja. Keluarga bertemu di ruang terbuka. Sebuah kedai kecil mulai membuka pintunya.')}</p>
+      <p>{t('Rainwater is collected. Gardens grow food. Energy is used wisely. Knowledge moves between generations. Local work connects production with markets and daily life.','Air hujan dikumpulkan. Kebun menghasilkan pangan. Energi digunakan dengan bijak. Pengetahuan berpindah antargenerasi. Pekerjaan lokal menghubungkan produksi dengan pasar dan kehidupan sehari-hari.')}</p>
+      <p>{t('Technology works behind the scenes—not to replace people, but to make the kawasan easier to understand, coordinate, operate, and improve.','Teknologi bekerja di balik layar—bukan untuk menggantikan manusia, tetapi agar kawasan lebih mudah dipahami, dikoordinasikan, dioperasikan, dan diperbaiki.')}</p>
+     </div>
+    </div>
+   </section>
+
+   <section id="explore" className="dark">
+    <label>05 / {t('EXPLORE THE PROJECT','JELAJAHI PROJECT')}</label>
+    <h2>{t('The digital foundation is being built before the physical foundation.','Fondasi digital dibangun sebelum fondasi fisik.')}</h2>
+    <p>{t('The Core Project OS holds the project model, research, blueprint, digital ecosystem logic, and future operational infrastructure. It is the place to understand what actually exists and what is still only a plan.','Core Project OS menyimpan model proyek, riset, blueprint, logika ekosistem digital, dan infrastruktur operasional masa depan. Di sanalah kondisi nyata dan hal yang masih berupa rencana dapat dibedakan.')}</p>
+    <div className="actions">
+      <a className="primary" href={CORE}>{t('Open the Core Project','Buka Core Project')} <ArrowUpRight/></a>
+      <a className="ghost" href={EMAIL}>{t('Contact Founder','Hubungi Founder')} <ArrowUpRight/></a>
+    </div>
+    <p className="inbound-note">{t('Current truth: no verified customer, no verified payment, no verified partner, and no physical implementation claim. No Proof, No Claim.','Kondisi saat ini: belum ada pelanggan terverifikasi, pembayaran terverifikasi, atau partner terverifikasi, dan belum ada klaim realisasi fisik. Tidak ada bukti, tidak ada klaim.')}</p>
+   </section>
+  </main>
+
+  <footer><div><b>Kawasan Masjid 1.000 Ha</b><p>{t('Open project for research, development, validation, and gradual collaboration.','Open project untuk riset, pengembangan, validasi, dan kolaborasi bertahap.')}</p></div><div className="links"><a href={CORE}>Core Project</a><a href={REPO} target="_blank" rel="noreferrer">GitHub</a></div></footer>
+ </div>
+}
+createRoot(document.getElementById('root')).render(<App/>);
