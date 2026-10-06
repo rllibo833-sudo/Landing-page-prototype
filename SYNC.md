@@ -1,51 +1,49 @@
 # Three-repository synchronization contract
 
-## Repository roles
+## Current synchronized state — 2026-10-07
 
-- **Founder-ai-memory** = Founder AI second brain / durable orchestration memory.
-- **kawasan-masjid-1000ha** = canonical Project OS: backend, Supabase, agents, migrations, internal workflows, evidence contracts and economic operations.
-- **Landing-page-prototype** = public discovery and storytelling website.
+- **Founder-ai-memory** = durable Founder memory and orchestration context.
+- **kawasan-masjid-1000ha** = canonical Project OS, runtime, Supabase, evidence and economic operations.
+- **Landing-page-prototype** = public discovery, storytelling and inbound front door.
 
-## Public boundary
+## Current runtime chain
 
-The public site is optimized for human understanding, not internal system inspection.
+Public landing → Problem Solver → capability request → Founder Gate → delivery/proof/payment.
 
-It may expose:
-- vision;
-- project story;
-- ecosystem concepts;
-- development journey;
-- conceptual future experience;
-- safe public navigation.
+The Problem Solver is implemented in the canonical Project OS at:
+`public/problem-solver.html`
 
-It must not expose:
-- private agent prompts;
-- service-role credentials;
-- SQL migrations;
-- Founder analytics;
-- internal revenue operations;
-- private opportunity records;
-- internal evidence ledgers;
-- operational secrets;
-- authenticated Founder workflows.
+The public landing now sends its primary Hero CTA directly to the Problem Solver.
 
-## Data rule
+## Verified state
 
-If public data is later read from Supabase, it must come from the canonical Project OS backend through a safe public/publishable boundary and RLS-protected public records. No second database is created for the public site.
+- Canonical latest commit: `9cb3451802edb68a390269bbe1dc4b668834faf8`
+- Landing latest commit: `64a6da50f14392278509e1e221291a91a852c01e`
+- Landing deployment workflow for that commit: success.
+- Public site language direction: English-first with Indonesian support.
+- Open capability issues currently verified: 0.
+- Customer: 0 verified.
+- Partner: 0 verified.
+- Payment: Rp0 verified.
+- Founder margin: Rp0 verified.
+- External proof: none yet.
 
-## Claim rule
+## Synchronization rules
 
-No Proof, No Claim.
+1. The canonical Project OS remains the source of truth for runtime, backend, evidence and economics.
+2. Founder-ai-memory records durable decisions, state and learning; it does not replace the canonical runtime.
+3. Landing-page-prototype exposes only safe public information and navigation.
+4. No private prompts, credentials, service-role keys, internal revenue records or private opportunity data are copied to the public repository.
+5. No second public database is created. Future public dynamic data must pass through a safe canonical backend boundary with appropriate RLS.
+6. **No Proof, No Claim.**
+7. A deployment is complete only after build/deployment success and available human-reviewable output.
 
-The public site must distinguish the long-term vision from what has actually been built, tested or externally verified. Internal evidence machinery can support claims behind the scenes without becoming the public user experience.
+## Economic gate
 
-## Deployment rule
+REAL NEED → QUALIFY → FOUNDER GATE → DELIVER → ACCEPTANCE → PAYMENT → VERIFIED MARGIN
 
-A deployment is not considered complete merely because the build succeeds. The release gate requires:
+The Opportunity Loop may scout public opportunities, but it must not turn applications, cold outreach or unverified listings into Founder opportunities.
 
-1. build success;
-2. deployment success;
-3. public URL availability;
-4. human-reviewable rendering.
+## Next execution priority
 
-No paid plan or trial is required as an architectural dependency.
+Prefer implementation, runtime verification, inbound qualification and economic proof over additional strategy documentation.
