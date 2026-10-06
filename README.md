@@ -28,7 +28,7 @@ Canonical path:
 
 **PROBLEM → DEFINE → EVIDENCE → SOLUTIONS A/B/C → COMPARE → RECOMMEND → WORKFLOW → DELIVERABLE → MEASURE**
 
-Start with the [Project OS](https://github.com/rllibo833-sudo/rllibo833-sudo/kawasan-masjid-1000ha) and its [Problem → Output Loop](https://github.com/rllibo833-sudo/kawasan-masjid-1000ha/blob/main/docs/runtime/REAL_PROBLEM_TO_OUTPUT_LOOP_V1.md).
+Start with the [Project OS](https://github.com/rllibo833-sudo/kawasan-masjid-1000ha) and its [Problem → Output Loop](https://github.com/rllibo833-sudo/kawasan-masjid-1000ha/blob/main/docs/runtime/REAL_PROBLEM_TO_OUTPUT_LOOP_V1.md).
 
 The public website does not claim that external usage, customer payment, partnership, funding, or physical implementation already exists.
 
