@@ -33,6 +33,7 @@ function App(){
       ['ecosystem',t('Ecosystem','Ekosistem')],
       ['journey',t('Journey','Perjalanan')],
       ['imagine',t('Imagine','Bayangkan')],
+      ['economic',t('Work with us','Bekerja sama')],
       ['explore',t('Explore','Jelajahi')]
     ].map(([a,b])=><button key={a} onClick={()=>go(a)}>{b}</button>)}
     <button className="lang" onClick={()=>setId(!id)}>{id?'EN':'ID'}</button>
@@ -46,7 +47,7 @@ function App(){
     <p>{t('Kawasan Masjid 1.000 Ha is a long-term Islamic Eco-City vision. The work begins with research, design, digital coordination, and small verifiable steps toward real-world implementation.','Kawasan Masjid 1.000 Ha adalah visi jangka panjang Islamic Eco-City. Perjalanan dimulai dari riset, desain, koordinasi digital, dan langkah kecil yang dapat dibuktikan menuju realisasi nyata.')}</p>
     <div className="actions">
       <a className="primary" href={CORE}>{t('Explore the project','Jelajahi project')} <ArrowUpRight/></a>
-      <a className="ghost" href={REPO} target="_blank" rel="noreferrer">{t('View Project OS','Lihat Project OS')} <ArrowUpRight/></a>
+      <a className="ghost" href="#economic">{t('Need a small research/ops deliverable?','Butuh deliverable riset/operasional kecil?')} <ArrowUpRight/></a>
     </div>
     <div className="stats"><span><b>1,000</b>hectares envisioned</span><span><b>08</b>connected systems</span><span><b>01</b>direction</span></div>
    </section>
@@ -90,6 +91,20 @@ function App(){
     </div>
    </section>
 
+
+   <section id="economic">
+    <label>05 / {t('A SMALL REAL-WORLD OFFER','TAWARAN NYATA BERSKALA KECIL')}</label>
+    <h2>{t('Turn a real problem into a reviewable deliverable.','Ubah masalah nyata menjadi deliverable yang dapat ditinjau.')}</h2>
+    <div className="two">
+      <div>
+       <p>{t('The first economic experiment is deliberately narrow: an AI-assisted Operations / Research Pack for a concrete operational or research need.','Eksperimen ekonomi pertama sengaja dibuat sempit: AI-assisted Operations / Research Pack untuk kebutuhan operasional atau riset yang konkret.')}</p>
+       <p>{t('Possible outputs include a decision brief, evidence register, reasoning, recommended workflow, implementation checklist, and limitations.','Output dapat berupa decision brief, evidence register, penalaran, rekomendasi alur kerja, checklist implementasi, dan batasan.')}</p>
+      </div>
+      <div className="quote"><b>{t('Initial pilot floor: Rp100.000','Batas awal pilot: Rp100.000')}</b><p>{t('This is an offer target, not claimed revenue. Every request is reviewed before scope, price, commitment, or delivery is accepted.','Ini adalah target penawaran, bukan klaim pendapatan. Setiap permintaan ditinjau sebelum scope, harga, komitmen, atau delivery diterima.')}</p><a className="primary" href={EMAIL}>{t('Send a concrete request','Kirim kebutuhan konkret')} <ArrowUpRight/></a></div>
+    </div>
+    <p className="inbound-note">{t('Path: Request → Qualify → Founder Review → Scope & Price → Deliver → Accept → Pay → Prove. No legal, medical, tax, investment, or other regulated advice.','Alur: Request → Qualify → Founder Review → Scope & Price → Deliver → Accept → Pay → Prove. Tidak menerima layanan hukum, medis, pajak, investasi, atau layanan teregulasi lainnya.')}</p>
+   </section>
+
    <section id="explore" className="dark">
     <label>05 / {t('EXPLORE THE PROJECT','JELAJAHI PROJECT')}</label>
     <h2>{t('The digital foundation is being built before the physical foundation.','Fondasi digital dibangun sebelum fondasi fisik.')}</h2>
@@ -102,7 +117,7 @@ function App(){
    </section>
   </main>
 
-  <footer><div><b>Kawasan Masjid 1.000 Ha</b><p>{t('Open project for research, development, validation, and gradual collaboration.','Open project untuk riset, pengembangan, validasi, dan kolaborasi bertahap.')}</p></div><div className="links"><a href={CORE}>Core Project</a><a href={REPO} target="_blank" rel="noreferrer">GitHub</a></div></footer>
+  <footer><div><b>Kawasan Masjid 1.000 Ha</b><p>{t('Open project for research, development, validation, and gradual collaboration.','Open project untuk riset, pengembangan, validasi, dan kolaborasi bertahap.')}</p></div><div className="links"><a href={CORE}>Core Project</a><a href={EMAIL}>Request a paid pilot</a><a href={REPO} target="_blank" rel="noreferrer">GitHub</a></div></footer>
  </div>
 }
 createRoot(document.getElementById('root')).render(<App/>);
