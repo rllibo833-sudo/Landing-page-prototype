@@ -14,22 +14,27 @@ These repositories form one system:
 
 The website is the human-first front door to a larger living Project OS.
 
-**VISION → CAPABILITY → REAL NEED → REQUEST → QUALIFY → FOUNDER GATE → REAL-WORLD PROOF**
+**VISION → CAPABILITY → REAL NEED → REQUEST → QUALIFY → FOUNDER GATE → DELIVER → ACCEPT → PAY → PROVE**
 
 The public site should help an independent visitor understand the vision and then reach the canonical capability surface. It must not expose private evidence, revenue operations, Founder analytics, SQL migrations, credentials, or sensitive runtime details.
 
 **Public inbound:** fadlibo833@gmail.com
 
+## First paid pilot
+
+**AI-assisted Operations / Research Pack**
+
+A narrow deliverable for a real operational or research need: decision brief, evidence/source register, assumptions and reasoning, recommended workflow, implementation checklist, and limitations.
+
+**Initial pilot floor: Rp100.000.** This is an offer/target, not achieved revenue. Every request is reviewed before scope, price, commitment, or delivery is accepted.
+
+See [ECONOMIC_PATH.md](ECONOMIC_PATH.md).
+
 ## What the Project OS can actually do
 
 The digital ecosystem is being validated as a practical problem-solving system, not as a portfolio of speculative features.
 
-Canonical path:
-
-**PROBLEM → DEFINE → EVIDENCE → SOLUTIONS A/B/C → COMPARE → RECOMMEND → WORKFLOW → DELIVERABLE → MEASURE**
-
-Start with the [Project OS](https://github.com/rllibo833-sudo/kawasan-masjid-1000ha) and its [Problem → Output Loop](https://github.com/rllibo833-sudo/kawasan-masjid-1000ha/blob/main/docs/runtime/REAL_PROBLEM_TO_OUTPUT_LOOP_V1.md).
-
+The public layer does not expose private runtime internals. It directs a real external request into a qualification and Founder-review path.
 The public website does not claim that external usage, customer payment, partnership, funding, or physical implementation already exists.
 
 ## Public experience
