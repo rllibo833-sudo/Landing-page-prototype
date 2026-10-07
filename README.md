@@ -11,13 +11,15 @@ It exists to make the project understandable to a human visitor in a few minutes
 ## How another person uses PUBLIC
 
 - **Curious visitor:** open the live site and understand the vision and current evidence.
-- **Potential collaborator:** inspect the contribution signals below and bring a concrete pathway.
+- **Potential collaborator:** read [COLLABORATION.md](COLLABORATION.md) and identify a concrete way to enter.
 - **Potential customer:** bring a concrete operational or research need; qualification happens before scope, price, or delivery.
 - **Developer/contributor:** work on the public-facing layer only; runtime belongs in CORE and durable decisions belong in MEMORY.
 
 ## Start here
 
 **Live public site:** https://rllibo833-sudo.github.io/Landing-page-prototype/
+
+**Collaboration gateway:** [COLLABORATION.md](COLLABORATION.md)
 
 **Core Project OS:** https://github.com/rllibo833-sudo/kawasan-masjid-1000ha
 
