@@ -22,6 +22,7 @@ html {
 
 body {
   margin: 0;
+  text-rendering: optimizeLegibility;
   background: var(--paper);
   color: var(--ink);
   font-family: 'DM Sans', Arial, sans-serif;
@@ -1347,4 +1348,20 @@ a {
 
 .runtimeFallback .button {
   margin-top: 14px;
+}
+
+
+/* ACCESSIBILITY */
+:focus-visible {
+  outline: 2px solid var(--gold-dark);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
 }
