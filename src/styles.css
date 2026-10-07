@@ -127,3 +127,32 @@ button{font:inherit}
  .principles{grid-template-columns:1fr}.deepSystemGrid{grid-template-columns:1fr}.innerHero{padding-top:135px}.innerHero h1{font-size:50px}.footerBottom{display:block}.footerBottom span{display:block;margin-top:7px}
 }
 @media (prefers-reduced-motion:reduce){.systemRow:hover,.researchCard:hover,.deepSystemCard:hover,.button:hover{transform:none}}
+
+/* Immersive visual layer v3 */
+.heroVisualImage{min-height:650px;border:0;border-radius:34px;background:#071a14;box-shadow:0 30px 90px rgba(0,0,0,.28);isolation:isolate}
+.heroPhoto{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;filter:saturate(.82) contrast(1.04)}
+.heroPhotoShade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(7,26,20,.05),rgba(7,26,20,.16) 45%,rgba(7,26,20,.9)),linear-gradient(90deg,rgba(7,26,20,.18),transparent 55%)}
+.imageLabel{position:absolute;z-index:5;display:grid;grid-template-columns:30px 1fr;column-gap:9px;align-items:start;padding:11px 13px;border:1px solid rgba(255,255,255,.22);border-radius:12px;background:rgba(7,26,20,.48);backdrop-filter:blur(12px);box-shadow:0 10px 30px rgba(0,0,0,.16);animation:labelFloat 5s ease-in-out infinite}
+.imageLabel span{grid-row:1/3;color:var(--gold);font:800 8px Manrope}
+.imageLabel b{font:800 8px Manrope;letter-spacing:.12em;color:#fff}
+.imageLabel small{grid-column:2;margin-top:3px;color:#c1ccc5;font-size:9px}
+.labelTop{top:14%;right:7%}.labelMid{left:6%;top:48%;animation-delay:-1.7s}.labelBottom{right:9%;bottom:20%;animation-delay:-3.2s}
+.imagePulse{position:absolute;z-index:4;width:16px;height:16px;border:1px solid var(--gold);border-radius:50%;animation:pulseRing 2.4s infinite}
+.pulseA{left:31%;top:57%}.pulseB{right:28%;top:35%;animation-delay:1.1s}
+.heroVisualImage .visualCaption{z-index:6;bottom:22px}
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .8s ease,transform .9s cubic-bezier(.2,.7,.2,1)}
+.reveal.isVisible{opacity:1;transform:none}
+.ecosystemShowcase .systemRow{transition:transform .28s ease,background .28s ease,color .28s ease,box-shadow .28s ease}
+.ecosystemShowcase .systemRow:hover{box-shadow:0 14px 30px rgba(7,26,20,.16)}
+.visualBandArt{background-image:url('https://images.unsplash.com/photo-1771945037187-cf4bf5668e69?auto=format&fit=crop&fm=jpg&q=78&w=1600');background-size:cover;background-position:center}
+.visualBandArt:after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(7,26,20,.05),rgba(7,26,20,.62))}
+.visualBandArt>*{z-index:2}
+.visualBandArt .sun,.visualBandArt .land,.visualBandArt .mosqueSilhouette{opacity:.34}
+.researchCard{position:relative}
+.researchCard:before{content:'';position:absolute;inset:0;pointer-events:none;border:1px solid transparent;border-radius:20px;transition:.25s}
+.researchCard:hover:before{border-color:rgba(228,199,122,.55)}
+@keyframes labelFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+@keyframes pulseRing{0%{box-shadow:0 0 0 0 rgba(228,199,122,.5)}70%{box-shadow:0 0 0 18px rgba(228,199,122,0)}100%{box-shadow:0 0 0 0 rgba(228,199,122,0)}}
+@media(max-width:900px){.heroVisualImage{min-height:560px}.labelTop{top:10%;right:5%}.labelMid{left:4%;top:45%}.labelBottom{right:5%;bottom:17%}}
+@media(max-width:560px){.heroVisualImage{min-height:455px;border-radius:24px}.imageLabel{padding:9px 10px;grid-template-columns:23px 1fr}.imageLabel small{font-size:8px}.imageLabel b{font-size:7px}.labelTop{top:9%;right:4%}.labelMid{left:4%;top:45%}.labelBottom{right:4%;bottom:18%}.visualBandArt{background-position:58% center}}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none}.imageLabel,.imagePulse{animation:none}}
