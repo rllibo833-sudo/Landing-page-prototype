@@ -108,3 +108,8 @@ Economic and runtime truth belongs to CORE; this README intentionally keeps only
 ---
 
 **Explore the live project, bring a concrete problem, or help prove the next real step.**
+
+
+## System link map
+
+See [`SYSTEM_LINK_MAP.md`](docs/SYSTEM_LINK_MAP.md) for the canonical three-repository synchronization boundary.
