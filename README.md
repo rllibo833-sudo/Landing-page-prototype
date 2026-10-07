@@ -24,7 +24,8 @@ The visual system is anchored by deep forest green, warm earth neutrals and rest
 
 - **Vision** — why the long-term destination begins with a digital foundation.
 - **Ecosystem** — eight connected systems and their relationships.
-- **Research** — research objects, evidence, blueprints and experiments.
+- **System** — how MEMORY, CORE and PUBLIC move from vision to evidence and Founder Gate.
+- **Research** — research objects, evidence, blueprints and experiments, with filters and connected paths.
 - **Collaborate** — concrete needs, capabilities and opportunities.
 - **About** — the MEMORY / CORE / PUBLIC boundary and current truth.
 
@@ -72,3 +73,8 @@ This is an offer/target, not claimed revenue. Every request is reviewed before s
 Runtime capability, evidence, and economic truth belong to CORE. PUBLIC contains only public-safe information.
 
 See SYSTEM_LINK_MAP.md for the synchronization boundary.
+
+
+## Experience contract
+
+The current PUBLIC experience includes a dedicated operating-system view and interactive research filtering. These are presentation-layer experiences: runtime truth remains in CORE and durable direction remains in Founder-OS.
