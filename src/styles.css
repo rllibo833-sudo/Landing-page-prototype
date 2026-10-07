@@ -190,3 +190,21 @@ body{font-family:Manrope,Arial,sans-serif;background:#f8fafc;color:#172033}
 .header{background:rgba(255,255,255,.92);border-bottom:1px solid #e2e8f0;backdrop-filter:blur(16px)}
 .brand{color:#172033}.brandMark{background:linear-gradient(135deg,#4285f4,#229ed9);color:#fff}.brand small{color:#64748b}.nav a{color:#475569}.nav a:hover,.nav .activeNav{color:#4285f4}.nav .navAction{background:#4285f4;color:#fff}.heroV2{background:linear-gradient(135deg,#0f172a 0%,#123b68 58%,#0b5f46 100%)}.heroCopy h1,.innerHero h1,.returnSection h2{font-family:Manrope,Arial,sans-serif;font-weight:700}.heroCopy h1 em{color:#4285f4}.buttonGold{background:#4285f4;border-color:#4285f4;color:#fff}.buttonOutline{border-color:rgba(255,255,255,.45);color:#fff}.button:hover{transform:translateY(-2px)}.eyebrow{color:#4285f4}.eyebrow.light{color:#7dd3fc}.statement h2 i,.sectionTop h2 i,.contentSection h2 i{color:#4285f4}.ecosystemShowcase{background:#f8fafc}.systemRow{background:#fff;border:1px solid #e2e8f0}.tone-gold{--tone:#fbbc05}.tone-blue{--tone:#4285f4}.tone-green{--tone:#34a853}.tone-aqua{--tone:#229ed9}.tone-amber{--tone:#fbbc05}.tone-coral{--tone:#ea4335}.tone-violet{--tone:#8b5cf6}.tone-rose{--tone:#ea4335}.visualBandCopy{background:linear-gradient(135deg,#0f172a,#123b68)}.researchCard{background:#fff;border-color:#e2e8f0}.returnSection{background:linear-gradient(135deg,#0f172a,#123b68 62%,#0b5f46)}.footer{background:#0b1220}.innerHero{background:linear-gradient(135deg,#0f172a,#123b68)}.darkPanel{background:#0f172a}.deepSystemCard:hover{background:#123b68}.truthStrip{background:#eff6ff}.smallSteps{background:#fff}.stepLine{color:#4285f4}.mobileMenu{color:#172033}.nav.navOpen{background:#fff;border-color:#e2e8f0}.nav.navOpen a{color:#334155}
 @media(max-width:900px){.header{background:rgba(255,255,255,.96)}.nav.navOpen .navAction{color:#fff}}
+
+
+/* Master blueprint visual layer — the actual CORE blueprint drives the experience */
+.heroBlueprintPreview{background:#eef2f7;padding:12px;min-height:610px}
+.heroBlueprintPreview:before{display:none}
+.heroBlueprintFrame{position:relative;width:100%;height:100%;min-height:586px;overflow:hidden;border-radius:30px;background:#fff;box-shadow:0 20px 70px rgba(15,23,42,.22)}
+.heroBlueprintFrame .heroPhoto{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;background:#fff;filter:saturate(1.04) contrast(1.02)}
+.heroBlueprintFrame .heroPhotoShade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(15,23,42,.02),rgba(15,23,42,.04) 55%,rgba(15,23,42,.55));z-index:2}
+.heroBlueprintFrame .imageLabel{z-index:5;background:rgba(255,255,255,.94);color:#172033;border:1px solid #e2e8f0;box-shadow:0 8px 25px rgba(15,23,42,.12)}
+.heroBlueprintFrame .imageLabel span{background:#4285f4;color:#fff}
+.heroBlueprintFrame .imageLabel small{color:#64748b}
+.heroBlueprintFrame .visualCaption{z-index:6;border-color:rgba(255,255,255,.35)}
+.heroBlueprintFrame .visualCaption span{color:#dbeafe}
+.heroBlueprintFrame .visualCaption b{color:#fff}
+.heroBlueprintFrame .imagePulse{border-color:#4285f4}
+.heroBlueprintFrame .pulseB{border-color:#34a853}
+@media(max-width:900px){.heroBlueprintPreview{min-height:560px}.heroBlueprintFrame{min-height:536px}}
+@media(max-width:560px){.heroBlueprintPreview{min-height:455px;padding:8px;border-radius:24px}.heroBlueprintFrame{min-height:439px;border-radius:20px}.heroBlueprintFrame .heroPhoto{object-fit:contain}.heroBlueprintFrame .labelMid{top:42%}.heroBlueprintFrame .labelBottom{bottom:19%}}
