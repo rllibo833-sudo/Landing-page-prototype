@@ -13,7 +13,6 @@ import {
 } from 'lucide-react';
 import './styles.css';
 
-const CORE = 'https://github.com/rllibo833-sudo/kawasan-masjid-core';
 const REPO = 'https://github.com/rllibo833-sudo/kawasan-masjid-core';
 const MEMORY = 'https://github.com/rllibo833-sudo/Founder-OS';
 const EMAIL = 'mailto:fadlibo833@gmail.com?subject=Kawasan%20Masjid%20%E2%80%94%20Peluang%20atau%20Kebutuhan';
@@ -765,10 +764,6 @@ function App() {
         </div>
 
         <div className="footerLinks">
-          <a href={MEMORY}>
-            Founder-OS <ArrowUpRight />
-          </a>
-
           <a href={REPO} target="_blank" rel="noreferrer">
             CORE Engine <ArrowUpRight />
           </a>
