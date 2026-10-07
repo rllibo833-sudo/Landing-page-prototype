@@ -1,41 +1,40 @@
 # Kawasan Masjid 1.000 Ha — Public Website
 
-> An open, long-term Islamic Eco-City vision — built through evidence, digital coordination, and gradual real-world implementation.
+> An immersive public front door for a long-term Islamic Eco-City vision — built through evidence, digital coordination, and gradual real-world implementation.
 
-This repository is the PUBLIC layer of the three-repository system and is the published website.
+This repository is the PUBLIC layer of the three-repository system. **These three repositories are one project, not three products.**
 
 ## One project, three layers
 
-- Founder-OS — MEMORY / Founder second brain, decision layer, and durable context.
-- kawasan-masjid-core — CORE / execution engine, runtime, Supabase, AI workforce, evidence and economic truth.
-- kawasan-masjid-public — PUBLIC / this published website, discovery, opportunity gateway, and inbound entry.
+- **Founder-OS** — MEMORY / Founder direction, decisions, continuity and governance.
+- **kawasan-masjid-core** — CORE / runtime, Supabase, AI workforce, evidence and economic truth.
+- **kawasan-masjid-public** — PUBLIC / visual experience, discovery, opportunity gateway and inbound entry.
 
-This is one project, not three products.
+## Public experience
 
-## Visitor path
+PUBLIC is intentionally designed as an **ecosystem to explore**, not a document to read.
 
-VISION → CAPABILITY → REAL NEED → REQUEST → QUALIFY → FOUNDER GATE → DELIVER → ACCEPT → PAY → PROVE
+The experience follows:
+
+**VISUAL → CURIOSITY → INTERACTION → DISCOVERY → INFORMATION → OPPORTUNITY**
+
+The visual system is anchored by deep forest green, warm earth neutrals and restrained gold, with interactive ecosystem mapping, visual research objects, clear pathways and Android-first usability.
+
+## Visitor routes
+
+- **Vision** — why the long-term destination begins with a digital foundation.
+- **Ecosystem** — eight connected systems and their relationships.
+- **Research** — research objects, evidence, blueprints and experiments.
+- **Collaborate** — concrete needs, capabilities and opportunities.
+- **About** — the MEMORY / CORE / PUBLIC boundary and current truth.
 
 ## Start here
 
 Published website: https://rllibo833-sudo.github.io/kawasan-masjid-public/
 
-Collaboration gateway: COLLABORATION.md
-
 Core engine: https://github.com/rllibo833-sudo/kawasan-masjid-core
 
 Founder OS: https://github.com/rllibo833-sudo/Founder-OS
-
-## Founder & operating model
-
-The Founder is the originator, system owner, strategic director, reviewer, and final accepter of consequential external commitments. AI is the execution leverage layer for research, analysis, implementation, testing, documentation, and repetitive operational work.
-
-## What can be inspected now
-
-A serious visitor can inspect:
-- PUBLIC — this published website and public status.
-- CORE — project runtime, backend, AI workforce, evidence/economic rules and technical documentation.
-- MEMORY — durable decisions, constraints, synchronization rules and continuity records.
 
 ## North Star
 
@@ -53,7 +52,7 @@ The digital layer is being built first because it can be researched, tested, mea
 
 ## First real economic experiment
 
-AI-assisted Operations / Research Pack
+**AI-assisted Operations / Research Pack**
 
 Initial pilot floor: Rp100.000.
 
@@ -66,18 +65,10 @@ This is an offer/target, not claimed revenue. Every request is reviewed before s
 - partners: 0 verified
 - physical implementation: not claimed
 
-No Proof, No Claim.
+**No Proof, No Claim.**
 
 ## Source of truth
 
-Runtime capability, evidence, and economic truth belong to CORE. This public repository contains only public-safe information.
+Runtime capability, evidence, and economic truth belong to CORE. PUBLIC contains only public-safe information.
 
-See SYSTEM_LINK_MAP.md for the canonical synchronization boundary.
-
-## Functional boundary
-
-PUBLIC is the external front door. CORE is the canonical runtime and evidence engine. Founder-OS is the Founder decision and continuity layer. A public visitor can discover and submit an opportunity through PUBLIC, but qualification, execution, evidence, and economic truth remain owned by CORE, while consequential decisions are recorded through MEMORY / Founder-OS.
-
-## Functional boundary
-
-PUBLIC is the external front door. CORE is the canonical runtime and evidence engine. Founder-OS is the Founder decision and continuity layer. A public visitor can discover and submit an opportunity through PUBLIC, but qualification, execution, evidence, and economic truth remain owned by CORE, while consequential decisions are recorded through MEMORY / Founder-OS.
+See SYSTEM_LINK_MAP.md for the synchronization boundary.
