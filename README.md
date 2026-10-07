@@ -8,6 +8,13 @@ It exists to make the project understandable to a human visitor in a few minutes
 
 **VISION → CAPABILITY → REAL NEED → REQUEST → QUALIFY → FOUNDER GATE → DELIVER → ACCEPT → PAY → PROVE**
 
+## How another person uses PUBLIC
+
+- **Curious visitor:** open the live site and understand the vision and current evidence.
+- **Potential collaborator:** inspect the contribution signals below and bring a concrete pathway.
+- **Potential customer:** bring a concrete operational or research need; qualification happens before scope, price, or delivery.
+- **Developer/contributor:** work on the public-facing layer only; runtime belongs in CORE and durable decisions belong in MEMORY.
+
 ## Start here
 
 **Live public site:** https://rllibo833-sudo.github.io/Landing-page-prototype/
@@ -75,7 +82,7 @@ The Founder is the final reviewer and accepter. AI provides research, analysis, 
 
 Project facts, architecture, evidence, runtime capability, and economic status belong to the canonical Core Project OS. This public repository must not invent claims or expose private operational data.
 
-See [ECONOMIC_PATH.md](ECONOMIC_PATH.md).
+Economic and runtime truth belongs to CORE; this README intentionally keeps only the public-facing summary.
 
 ---
 
