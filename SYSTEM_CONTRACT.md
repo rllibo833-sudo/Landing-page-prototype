@@ -2,11 +2,11 @@
 
 ## One system, three responsibilities
 
-These repositories are not three products.
+These repositories are not three products. They are three layers of one project.
 
-1. **Founder-ai-memory** = MEMORY — durable Founder decisions, verified facts, constraints, lessons, and recovery context.
-2. **kawasan-masjid-1000ha** = CORE — canonical project model, digital ecosystem logic, application/runtime, Supabase/backend, AI workforce, evidence and economic truth.
-3. **Landing-page-prototype** = PUBLIC — human-facing website, vision, story, ecosystem, blueprint, journey, and public inbound entry.
+1. **Founder-OS** = MEMORY / governance — durable Founder decisions, verified facts, constraints, lessons, evidence, and continuity.
+2. **kawasan-masjid-core** = CORE / runtime — canonical project model, application/runtime, Supabase/backend, AI workforce, evidence, economics, APIs, and operational execution.
+3. **kawasan-masjid-public** = PUBLIC / external interface — human-facing website, vision, discovery, public information, opportunity gateway, and inbound entry.
 
 ## North Star
 
@@ -25,7 +25,7 @@ Founder = Originator, System Owner, Strategic Director, Reviewer, Final Accepter
 
 AI = research, analysis, implementation, testing, monitoring, documentation, and repetitive operational leverage.
 
-Founder is not required to become a programmer, cold prospector, generic freelancer, or manual opportunity hunter.
+Founder-OS is a memory/governance layer. It does not execute CORE economic operations or directly mutate operational Supabase state.
 
 ## Operating loop
 
@@ -58,7 +58,7 @@ If those answers are unclear, the feature is deferred.
 
 When architecture, product direction, or truth changes:
 - CORE is updated first when runtime truth changes.
-- MEMORY records the durable decision and current state.
+- Founder-OS records the durable decision and current state.
 - PUBLIC is updated only for information that should be visible externally.
 
 No repository may invent a different project identity.
