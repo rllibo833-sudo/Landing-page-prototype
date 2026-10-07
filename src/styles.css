@@ -156,3 +156,30 @@ button{font:inherit}
 @media(max-width:900px){.heroVisualImage{min-height:560px}.labelTop{top:10%;right:5%}.labelMid{left:4%;top:45%}.labelBottom{right:5%;bottom:17%}}
 @media(max-width:560px){.heroVisualImage{min-height:455px;border-radius:24px}.imageLabel{padding:9px 10px;grid-template-columns:23px 1fr}.imageLabel small{font-size:8px}.imageLabel b{font-size:7px}.labelTop{top:9%;right:4%}.labelMid{left:4%;top:45%}.labelBottom{right:4%;bottom:18%}.visualBandArt{background-position:58% center}}
 @media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none}.imageLabel,.imagePulse{animation:none}}
+
+/* Blueprint UI/UX v4 — visual-first, small-steps principle */
+:root{--forest:#0b2118;--forest2:#123d2a;--forest3:#1d6a4b;--paper:#f7f9f5;--paper2:#edf3ee;--ink:#10231a;--muted:#66766d;--line:#dbe5de;--gold:#f4c95d;--blue:#4285f4;--aqua:#10b981;--coral:#ea4335;--violet:#8b5cf6;--yellow:#fbbc04;}
+body{background:var(--paper);color:var(--ink)}
+.header{background:rgba(11,33,24,.78)}
+.heroV2{background:var(--forest)}
+.heroCopy h1{font-size:clamp(58px,7vw,98px);letter-spacing:-.06em}
+.heroCopy h1 em{color:var(--gold)}
+.heroCopy>p{max-width:680px;font-size:16px}
+.blueprintStatement{background:linear-gradient(180deg,#f7f9f5,#eef4ef)}
+.blueprintStatement h2 i{color:var(--forest3)}
+.systemRow{position:relative;overflow:hidden}
+.systemRow:before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--tone,var(--gold));opacity:.9}
+.tone-gold{--tone:#f4c95d}.tone-blue{--tone:#4285f4}.tone-green{--tone:#10b981}.tone-aqua{--tone:#2ab7a9}.tone-amber{--tone:#fbbc04}.tone-coral{--tone:#ea4335}.tone-violet{--tone:#8b5cf6}.tone-rose{--tone:#d96aa7}
+.systemRow:hover,.systemRow.selected{box-shadow:0 16px 35px rgba(10,35,24,.14)}
+.stageDot{border-color:var(--tone,var(--gold));color:var(--tone,var(--gold));box-shadow:0 0 0 0 color-mix(in srgb,var(--tone,var(--gold)) 35%,transparent)}
+.stageDot:hover{box-shadow:0 0 0 8px color-mix(in srgb,var(--tone,var(--gold)) 12%,transparent)}
+.stageBadge{background:var(--tone,var(--gold));color:var(--forest)}
+.visualBandArt{background-image:url('https://images.unsplash.com/photo-1754437958764-54d0837f254e?auto=format&fit=crop&fm=jpg&q=82&w=1800');background-size:cover;background-position:center;min-height:650px}
+.visualBandArt:after{background:linear-gradient(180deg,rgba(7,26,20,.04),rgba(7,26,20,.72))}
+.visualBandArt .imageLabel{z-index:4}
+.smallSteps{padding:80px clamp(22px,7vw,105px);background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.stepLine{display:flex;align-items:center;justify-content:center;gap:15px;flex-wrap:wrap;margin:28px 0 18px;color:var(--forest);font:800 10px Manrope;letter-spacing:.12em}
+.stepLine svg{width:15px;color:#a18b55}.smallSteps>p{max-width:700px;margin:0 auto;text-align:center;color:#68766e;font-size:13px;line-height:1.8}
+.researchCard:hover{transform:translateY(-7px)}
+@media(max-width:900px){.heroCopy h1{font-size:clamp(50px,11vw,74px)}.visualBandArt{min-height:480px}.stepLine{justify-content:flex-start}}
+@media(prefers-reduced-motion:reduce){.researchCard:hover,.systemRow:hover{transform:none}}
