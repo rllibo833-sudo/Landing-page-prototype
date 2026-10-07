@@ -25,6 +25,25 @@ It exists to make the project understandable to a human visitor in a few minutes
 
 **Founder AI Memory:** https://github.com/rllibo833-sudo/Founder-ai-memory
 
+
+## Founder & operating model
+
+The Founder is the **originator, system owner, strategic director, reviewer, and final accepter** of consequential external commitments. AI is used as the execution layer for research, analysis, implementation, testing, documentation, and repetitive operational work.
+
+This operating model is deliberate: the Founder does not need to become a generic freelancer, cold-outreach salesperson, or full-time programmer for the system to be useful.
+
+## What can be inspected now
+
+A serious visitor can inspect the system without relying on a private pitch:
+
+- **PUBLIC** — vision, project story, current public status, and inbound entry points;
+- **CORE** — project model, runtime foundation, evidence/economic rules, collaboration workflow, and technical documentation;
+- **MEMORY** — durable decisions, constraints, synchronization rules, and continuity records.
+
+The current stack includes a React + TypeScript + Vite application foundation and a Supabase-backed data/auth layer. Specific capabilities are treated as verified only when the relevant implementation or evidence supports them.
+
+**The standard is simple: inspect first, qualify second, commit only after Founder review.**
+
 ## What the visitor should understand
 
 Kawasan Masjid 1.000 Ha is a long-term vision for a mosque-centered community where eight systems reinforce one another:
