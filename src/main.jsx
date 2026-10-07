@@ -1,4 +1,4 @@
-import React, { Component, useState } from 'react';
+import React, { Component, useEffect, useState } from 'react';
 import { createRoot } from 'react-dom/client';
 import { ArrowRight, ArrowUpRight, Menu, X, Compass, Users, ShieldCheck, Search, BookOpen, Network, Layers3, Sparkles, Map, FlaskConical } from 'lucide-react';
 import './styles.css';
@@ -45,12 +45,14 @@ function Eyebrow({children,light=false}){return <div className={light?'eyebrow l
 function Button({href,children,gold=false}){return <a className={gold?'button buttonGold':'button buttonOutline'} href={href}>{children}<ArrowRight/></a>}
 
 function HeroVisual(){
- return <div className="heroVisual" aria-label="Visual abstrak ekosistem kawasan">
-  <div className="orb orb1"/><div className="orb orb2"/><div className="orb orb3"/>
-  <div className="cityCore"><div className="minaret"/><div className="dome"/><span>MASJID</span></div>
-  {systems.map((s,i)=><div key={s.id} className={'orbitNode n'+i}><span>{s.id}</span><b>{s.short}</b></div>)}
-  <div className="orbitLine line1"/><div className="orbitLine line2"/><div className="orbitLine line3"/>
-  <div className="visualCaption"><span>LIVE CONCEPT</span><b>ONE CONNECTED ECOSYSTEM</b></div>
+ return <div className="heroVisual heroVisualImage" aria-label="Masjid dan ruang hijau sebagai orientasi ekosistem">
+  <img className="heroPhoto" src="https://images.unsplash.com/photo-1754437958764-54d0837f254e?auto=format&fit=crop&fm=jpg&q=82&w=1800" alt="Arsitektur masjid Indonesia dengan pola geometris dan cahaya hangat" />
+  <div className="heroPhotoShade"/>
+  <div className="imageLabel labelTop"><span>01</span><b>ORIENTATION POINT</b><small>Masjid sebagai jantung</small></div>
+  <div className="imageLabel labelMid"><span>02</span><b>LIVING SYSTEM</b><small>Nature · people · knowledge</small></div>
+  <div className="imageLabel labelBottom"><span>03</span><b>FUTURE LAYER</b><small>Digital → evidence → action</small></div>
+  <div className="imagePulse pulseA"/><div className="imagePulse pulseB"/>
+  <div className="visualCaption"><span>VISUAL REFERENCE · UNSPLASH</span><b>THE MOSQUE IS THE STARTING POINT</b></div>
  </div>
 }
 
@@ -65,9 +67,9 @@ function Home(){
    <div className="scrollCue">SCROLL TO EXPLORE <span>↓</span></div>
   </section>
 
-  <section className="statement"><div><Eyebrow>THE IDEA</Eyebrow><h2>Bukan sekadar membangun tempat. <i>Kita membangun hubungan antar-kehidupan.</i></h2></div><p>Masjid, pendidikan, pangan, air, energi, ekonomi, teknologi, hunian, dan ruang publik dirancang sebagai satu jaringan. Digital menjadi lapisan pertama untuk menemukan apa yang benar-benar berguna.</p></section>
+  <section className="statement reveal"><div><Eyebrow>THE IDEA</Eyebrow><h2>Bukan sekadar membangun tempat. <i>Kita membangun hubungan antar-kehidupan.</i></h2></div><p>Masjid, pendidikan, pangan, air, energi, ekonomi, teknologi, hunian, dan ruang publik dirancang sebagai satu jaringan. Digital menjadi lapisan pertama untuk menemukan apa yang benar-benar berguna.</p></section>
 
-  <section className="ecosystemShowcase">
+  <section className="ecosystemShowcase reveal">
    <div className="sectionTop"><div><Eyebrow>01 / THE ECOSYSTEM</Eyebrow><h2>Delapan sistem.<br/><i>Satu kawasan.</i></h2></div><p>Pilih satu titik. Lihat apa fungsinya, apa yang sedang dipelajari, dan dengan sistem mana ia terhubung.</p></div>
    <div className="systemExplorer">
     <div className="systemList">{systems.map((s,i)=>{const I=s.icon;return <button key={s.id} className={'systemRow '+(selected===i?'selected':'')} onClick={()=>setSelected(i)}><span>{s.id}</span><I/><div><b>{s.name}</b><small>{s.short}</small></div><ArrowRight/></button>})}</div>
@@ -75,11 +77,11 @@ function Home(){
    </div>
   </section>
 
-  <section className="visualBand"><div className="visualBandArt"><div className="sun"/><div className="land l1"/><div className="land l2"/><div className="land l3"/><div className="mosqueSilhouette"><span/></div></div><div className="visualBandCopy"><Eyebrow light>02 / WHY DIGITAL FIRST</Eyebrow><h2>Bangun sistemnya.<br/><i>Uji nilainya.</i></h2><p>Belum ada klaim kawasan fisik, customer, partner, atau revenue. Yang sedang dibangun adalah fondasi yang memungkinkan semuanya diuji dengan lebih disiplin.</p><Button gold href={BASE+'system.html'}>Lihat cara kerjanya</Button></div></section>
+  <section className="visualBand reveal"><div className="visualBandArt"><div className="sun"/><div className="land l1"/><div className="land l2"/><div className="land l3"/><div className="mosqueSilhouette"><span/></div></div><div className="visualBandCopy"><Eyebrow light>02 / WHY DIGITAL FIRST</Eyebrow><h2>Bangun sistemnya.<br/><i>Uji nilainya.</i></h2><p>Belum ada klaim kawasan fisik, customer, partner, atau revenue. Yang sedang dibangun adalah fondasi yang memungkinkan semuanya diuji dengan lebih disiplin.</p><Button gold href={BASE+'system.html'}>Lihat cara kerjanya</Button></div></section>
 
-  <section className="researchTeaser"><div className="sectionTop"><div><Eyebrow>03 / RESEARCH</Eyebrow><h2>Ide yang bisa <i>ditinjau.</i></h2></div><a className="textLink" href={BASE+'research.html'}>Buka research library <ArrowUpRight/></a></div><div className="researchGrid"><article className="researchCard large"><div className="researchArt artEnergy"><span>01</span><b>WASTE → ENERGY</b></div><div><small>EXPERIMENT · ENERGY SYSTEM</small><h3>Bagaimana limbah dapat berubah menjadi bagian dari infrastruktur energi?</h3><a href={BASE+'research.html'}>Explore evidence <ArrowRight/></a></div></article><article className="researchCard"><div className="researchArt artDigital"><span>02</span><b>DIGITAL COMMUNITY</b></div><div><small>RESEARCH · DIGITAL SYSTEM</small><h3>Bagaimana kebutuhan nyata bisa menemukan kemampuan yang tepat?</h3><a href={BASE+'research.html'}>Explore research <ArrowRight/></a></div></article><article className="researchCard"><div className="researchArt artFood"><span>03</span><b>FOOD SYSTEM</b></div><div><small>BLUEPRINT · FOOD SYSTEM</small><h3>Bagaimana pangan dapat menjadi bagian dari ekonomi lokal?</h3><a href={BASE+'research.html'}>Explore blueprint <ArrowRight/></a></div></article></div></section>
+  <section className="researchTeaser reveal"><div className="sectionTop"><div><Eyebrow>03 / RESEARCH</Eyebrow><h2>Ide yang bisa <i>ditinjau.</i></h2></div><a className="textLink" href={BASE+'research.html'}>Buka research library <ArrowUpRight/></a></div><div className="researchGrid"><article className="researchCard large"><div className="researchArt artEnergy"><span>01</span><b>WASTE → ENERGY</b></div><div><small>EXPERIMENT · ENERGY SYSTEM</small><h3>Bagaimana limbah dapat berubah menjadi bagian dari infrastruktur energi?</h3><a href={BASE+'research.html'}>Explore evidence <ArrowRight/></a></div></article><article className="researchCard"><div className="researchArt artDigital"><span>02</span><b>DIGITAL COMMUNITY</b></div><div><small>RESEARCH · DIGITAL SYSTEM</small><h3>Bagaimana kebutuhan nyata bisa menemukan kemampuan yang tepat?</h3><a href={BASE+'research.html'}>Explore research <ArrowRight/></a></div></article><article className="researchCard"><div className="researchArt artFood"><span>03</span><b>FOOD SYSTEM</b></div><div><small>BLUEPRINT · FOOD SYSTEM</small><h3>Bagaimana pangan dapat menjadi bagian dari ekonomi lokal?</h3><a href={BASE+'research.html'}>Explore blueprint <ArrowRight/></a></div></article></div></section>
 
-  <section className="returnSection"><div className="returnOrb"/><Eyebrow light>THE DOOR IS OPEN</Eyebrow><h2>Datang karena penasaran.<br/><i>Kembali karena menemukan sesuatu.</i></h2><p>Temukan visi, telusuri sistem, baca riset, lalu masuk ketika Anda punya kebutuhan atau kontribusi yang nyata.</p><div><Button gold href={BASE+'collaborate.html'}>Masuk ke ekosistem</Button><Button href={BASE+'about.html'}>Kenali project</Button></div></section>
+  <section className="returnSection reveal"><div className="returnOrb"/><Eyebrow light>THE DOOR IS OPEN</Eyebrow><h2>Datang karena penasaran.<br/><i>Kembali karena menemukan sesuatu.</i></h2><p>Temukan visi, telusuri sistem, baca riset, lalu masuk ketika Anda punya kebutuhan atau kontribusi yang nyata.</p><div><Button gold href={BASE+'collaborate.html'}>Masuk ke ekosistem</Button><Button href={BASE+'about.html'}>Kenali project</Button></div></section>
  </main>
 }
 
@@ -92,5 +94,5 @@ function Research(){const [filter,setFilter]=useState('ALL');const items=[['01',
 function Collaborate(){return <Inner type="04 / COLLABORATE" title="Masuk melalui kebutuhan nyata." lead="Kebutuhan, kemampuan, pilot, partner, atau peluang implementasi yang konkret adalah pintu masuk paling sehat ke ekosistem."><section className="contentSection split"><div><Eyebrow>THE PATH</Eyebrow><h2>Request → Qualify → Founder Review → Deliver → Prove</h2></div><div className="prose"><p>Mulai dari hal yang dapat dijelaskan dan diterima. Tidak ada klaim customer, partner, payment, atau implementasi fisik tanpa bukti.</p><a className="button buttonGold" href={EMAIL}>Kirim kebutuhan konkret <ArrowUpRight/></a></div></section><section className="darkPanel offerPanel"><Eyebrow light>INITIAL ECONOMIC EXPERIMENT</Eyebrow><h2>AI-assisted Operations / Research Pack</h2><p>Decision brief, evidence register, recommended workflow, implementation checklist, dan limitations untuk kebutuhan konkret.</p><strong>Target pilot mulai Rp100.000</strong><small>Target penawaran, bukan klaim revenue.</small></section></Inner>}
 function About(){return <Inner type="05 / ABOUT" title="Tiga lapisan. Satu project." lead="PUBLIC, CORE, dan Founder-OS memiliki peran berbeda tetapi bekerja sebagai satu sistem."><section className="contentSection"><div className="layerCards"><article><span>PUBLIC</span><h3>Magnet & front door</h3><p>Menjelaskan, memperlihatkan, dan menerima discovery serta peluang eksternal.</p></article><article><span>CORE</span><h3>Engine & proof</h3><p>Runtime, backend, evidence, workflows, economics, dan kemampuan yang dapat dijalankan.</p></article><article><span>FOUNDER-OS</span><h3>Direction & memory</h3><p>Keputusan Founder, constraint, continuity, governance, dan Founder Gate.</p></article></div></section><section className="truthStrip"><ShieldCheck/><div><b>Current truth</b><span>Customer 0 · Partner 0 · Payment Rp0 · Physical implementation not claimed.</span></div><strong>No Proof, No Claim.</strong></section></Inner>}
 
-function App(){const path=window.location.pathname.split('/').pop()||'index.html';let page=path==='vision.html'?<Vision/>:path==='ecosystem.html'?<Ecosystem/>:path==='system.html'?<System/>:path==='research.html'?<Research/>:path==='collaborate.html'?<Collaborate/>:path==='about.html'?<About/>:<Home/>;return <Shell>{page}</Shell>}
+function App(){useEffect(()=>{const nodes=[...document.querySelectorAll('.reveal')];if(!('IntersectionObserver' in window)){nodes.forEach(n=>n.classList.add('isVisible'));return;}const io=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('isVisible');io.unobserve(e.target);}}),{threshold:.12});nodes.forEach(n=>io.observe(n));return()=>io.disconnect();},[]);const path=window.location.pathname.split('/').pop()||'index.html';let page=path==='vision.html'?<Vision/>:path==='ecosystem.html'?<Ecosystem/>:path==='system.html'?<System/>:path==='research.html'?<Research/>:path==='collaborate.html'?<Collaborate/>:path==='about.html'?<About/>:<Home/>;return <Shell>{page}</Shell>}
 createRoot(document.getElementById('root')).render(<AppErrorBoundary><App/></AppErrorBoundary>);
