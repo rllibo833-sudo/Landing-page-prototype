@@ -4,18 +4,18 @@ import './spatial-map-v2.css';
 const BLUEPRINT='https://raw.githubusercontent.com/rllibo833-sudo/kawasan-masjid-core/main/IMG_20260921_131112.png';
 
 const POINTS=[
- {id:'01',name:'Masjid Utama',type:'LIFE',x:51,y:48},
- {id:'02',name:'Plaza & Civil Life',type:'LIFE',x:55,y:39},
- {id:'03',name:'Library & Education',type:'KNOW',x:39,y:32},
- {id:'04',name:'Health & Community',type:'LIFE',x:31,y:42},
- {id:'05',name:'Culinary / UMKM',type:'ACT',x:67,y:39},
- {id:'06',name:'Agriculture',type:'LIFE',x:77,y:57},
- {id:'07',name:'Livestock',type:'LIFE',x:82,y:69},
- {id:'08',name:'Water & Ecology',type:'LIFE',x:67,y:73},
- {id:'09',name:'Energy & Utilities',type:'ACT',x:27,y:70},
- {id:'10',name:'Sports / Archery / Equestrian',type:'ACT',x:44,y:79},
- {id:'11',name:'Living & Housing',type:'PURPOSE',x:69,y:25},
- {id:'12',name:'E-bike / Mobility Hub',type:'KNOW',x:59,y:63}
+ {id:'01',name:'Masjid Utama',type:'LIFE',x:50,y:49},
+ {id:'02',name:'Plaza & Civil Life',type:'LIFE',x:50,y:40},
+ {id:'03',name:'Education / Library',type:'KNOW',x:50,y:27},
+ {id:'04',name:'Health & Community',type:'LIFE',x:31,y:43},
+ {id:'05',name:'Culinary / UMKM',type:'ACT',x:69,y:42},
+ {id:'06',name:'Agriculture / Hydroponic',type:'LIFE',x:73,y:72},
+ {id:'07',name:'Livestock',type:'LIFE',x:83,y:62},
+ {id:'08',name:'Water & Ecology',type:'LIFE',x:23,y:27},
+ {id:'09',name:'Energy / Waste Utilities',type:'ACT',x:77,y:79},
+ {id:'10',name:'Sports / Archery / Equestrian',type:'ACT',x:67,y:20},
+ {id:'11',name:'Living & Housing',type:'PURPOSE',x:34,y:63},
+ {id:'12',name:'Mobility / Parking Hub',type:'KNOW',x:50,y:84}
 ];
 
 const tone={LIFE:'#10b981',KNOW:'#4285f4',ACT:'#ea4335',PURPOSE:'#fbbc04'};
