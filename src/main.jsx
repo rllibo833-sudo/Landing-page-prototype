@@ -16,7 +16,7 @@ import './styles.css';
 const CORE = 'https://github.com/rllibo833-sudo/kawasan-masjid-core';
 const REPO = 'https://github.com/rllibo833-sudo/kawasan-masjid-core';
 const MEMORY = 'https://github.com/rllibo833-sudo/Founder-OS';
-const EMAIL = 'mailto:fadlibo833@gmail.com';
+const EMAIL = 'mailto:fadlibo833@gmail.com?subject=Kawasan%20Masjid%20%E2%80%94%20Peluang%20atau%20Kebutuhan';
 
 const paths = [
   {
@@ -24,7 +24,7 @@ const paths = [
     number: '01',
     title: 'Jelajahi',
     titleEn: 'Explore',
-    text: 'Pahami visi, kondisi saat ini, dan apa yang benar-benar sudah dibangun.',
+    text: 'Pahami visi, apa yang sedang dibangun, dan bukti yang benar-benar tersedia.',
     action: 'Lihat project',
     href: '#about',
   },
@@ -42,7 +42,7 @@ const paths = [
     number: '03',
     title: 'Berkolaborasi',
     titleEn: 'Collaborate',
-    text: 'Bawa kebutuhan nyata, pilot, jalur implementasi, atau pekerjaan konkret yang dapat dinilai.',
+    text: 'Bawa kebutuhan nyata, kemampuan, pilot, jalur implementasi, atau peluang yang dapat dinilai.',
     action: 'Ajukan peluang',
     href: '#collaborate',
   },
@@ -197,8 +197,8 @@ function App() {
 
             <p className="heroLead">
               {t(
-                'Kawasan Masjid 1.000 Ha adalah visi jangka panjang Islamic Eco-City. Perjalanan dimulai dari riset, desain, teknologi, koordinasi, dan langkah nyata yang dapat dibuktikan.',
-                'Kawasan Masjid 1.000 Ha is a long-term Islamic Eco-City vision. The journey starts with research, design, technology, coordination, and small steps that can be proven.'
+                'Kawasan Masjid 1.000 Ha adalah visi jangka panjang Islamic Eco-City. Fondasi pertama yang sedang dibangun adalah ekosistem digital: tempat orang menemukan kebutuhan, kemampuan, riset, kolaborasi, dan peluang yang dapat diuji dengan bukti.',
+                'Kawasan Masjid 1.000 Ha is a long-term Islamic Eco-City vision. The first foundation is a digital ecosystem where needs, capabilities, research, collaboration, and opportunities can be discovered and tested with evidence.'
               )}
             </p>
 
@@ -318,14 +318,14 @@ function App() {
 
             <h2>
               {t(
-                'Tidak semua orang perlu masuk ke sistem teknis.',
+                'Satu pintu untuk berbagai jenis peluang.',
                 'Not everyone needs to enter the technical system.'
               )}
             </h2>
 
             <p>
               {t(
-                'Pilih apa yang ingin Anda lakukan. Detail teknis berada di belakang layar.',
+                'Anda tidak perlu memahami seluruh mesin di belakang layar. Pilih cara Anda ingin terlibat.',
                 'Choose what you want to do. Technical machinery stays behind the scenes.'
               )}
             </p>
@@ -422,8 +422,8 @@ function App() {
 
             <p>
               {t(
-                'Landing page ini adalah pintu masuk publik. Di belakangnya ada workspace inti untuk data, riset, evidence, keputusan Founder, dan pengembangan sistem. Setiap langkah harus meninggalkan bukti sebelum diperluas.',
-                'This landing page is the public entry point. Behind it is the core workspace for data, research, evidence, Founder decisions, and system development. Each step must leave evidence before it expands.'
+                'Website ini adalah pintu masuk publik dan magnet peluang. Di belakangnya ada workspace inti untuk data, riset, evidence, keputusan Founder, dan pengembangan sistem. Setiap langkah harus meninggalkan bukti sebelum diperluas.',
+                'This website is the public entry point and opportunity layer. Behind it is the core workspace for data, research, evidence, Founder decisions, and system development. Each step must leave evidence before it expands.'
               )}
             </p>
           </div>
@@ -572,8 +572,8 @@ function App() {
 
               <p>
                 {t(
-                  'Project ini tidak mencari sekadar followers atau janji kolaborasi. Jalur terkuat adalah kebutuhan nyata, pilot, implementation pathway, atau pekerjaan konkret dengan hasil yang dapat diterima.',
-                  'This project is not looking for followers or vague collaboration promises. The strongest pathway is a real need, pilot, implementation pathway, or concrete work with an accepted outcome.'
+                  'Project ini dibangun untuk menemukan hubungan yang menghasilkan langkah nyata — bukan sekadar followers atau janji kolaborasi. Jalur terkuat adalah kebutuhan nyata, pilot, implementation pathway, atau pekerjaan konkret dengan hasil yang dapat diterima.',
+                  'This project is designed to find relationships that create real next steps — not merely followers or vague collaboration promises. The strongest pathway is a real need, pilot, implementation pathway, or concrete work with an accepted outcome.'
                 )}
               </p>
 
