@@ -404,6 +404,78 @@ function App() {
           </div>
         </section>
 
+        {/* SYSTEM FLOW */}
+        <section className="section systemFlowSection">
+          <div className="sectionHeading">
+            <div>
+              <div className="eyebrow darkEyebrow">
+                04 / {t('CARA SISTEM BEKERJA', 'HOW THE SYSTEM WORKS')}
+              </div>
+
+              <h2>
+                {t(
+                  'Dari visi → sistem digital → bukti → keputusan → implementasi.',
+                  'From vision → digital system → evidence → decisions → implementation.'
+                )}
+              </h2>
+            </div>
+
+            <p>
+              {t(
+                'Landing page ini adalah pintu masuk publik. Di belakangnya ada workspace inti untuk data, riset, evidence, keputusan Founder, dan pengembangan sistem. Setiap langkah harus meninggalkan bukti sebelum diperluas.',
+                'This landing page is the public entry point. Behind it is the core workspace for data, research, evidence, Founder decisions, and system development. Each step must leave evidence before it expands.'
+              )}
+            </p>
+          </div>
+
+          <div className="systemFlow">
+            <article className="systemFlowCard">
+              <span>01</span>
+              <strong>{t('VISI', 'VISION')}</strong>
+              <p>{t('Arah besar, tujuan, prinsip, dan batasan project.', 'Long-term direction, purpose, principles, and constraints.')}</p>
+            </article>
+            <div className="systemFlowArrow">→</div>
+            <article className="systemFlowCard">
+              <span>02</span>
+              <strong>{t('DIGITAL', 'DIGITAL')}</strong>
+              <p>{t('Riset, dokumen, data, tools, dan koordinasi yang dapat ditinjau.', 'Research, documents, data, tools, and coordination that can be reviewed.')}</p>
+            </article>
+            <div className="systemFlowArrow">→</div>
+            <article className="systemFlowCard">
+              <span>03</span>
+              <strong>{t('EVIDENCE', 'EVIDENCE')}</strong>
+              <p>{t('Apa yang benar-benar sudah ada dipisahkan dari asumsi dan rencana.', 'What actually exists is separated from assumptions and plans.')}</p>
+            </article>
+            <div className="systemFlowArrow">→</div>
+            <article className="systemFlowCard">
+              <span>04</span>
+              <strong>{t('FOUNDER GATE', 'FOUNDER GATE')}</strong>
+              <p>{t('Hal yang membutuhkan validasi, prioritas, atau keputusan naik ke Founder.', 'Items requiring validation, prioritization, or decisions reach the Founder.')}</p>
+            </article>
+            <div className="systemFlowArrow">→</div>
+            <article className="systemFlowCard">
+              <span>05</span>
+              <strong>{t('IMPLEMENTASI', 'IMPLEMENTATION')}</strong>
+              <p>{t('Komponen terkecil yang berguna diuji sebelum sistem diperbesar.', 'The smallest useful component is tested before the system expands.')}</p>
+            </article>
+          </div>
+
+          <div className="systemBoundary">
+            <div>
+              <strong>{t('PUBLIC', 'PUBLIC')}</strong>
+              <span>{t('Untuk manusia, calon partner, reviewer, dan masyarakat memahami project.', 'For people, potential partners, reviewers, and the public to understand the project.')}</span>
+            </div>
+            <div>
+              <strong>{t('CORE', 'CORE')}</strong>
+              <span>{t('Untuk runtime, backend, Supabase, evidence, dan ekonomi sistem.', 'For runtime, backend, Supabase, evidence, and system economics.')}</span>
+            </div>
+            <div>
+              <strong>{t('MEMORY', 'MEMORY')}</strong>
+              <span>{t('Untuk keputusan Founder, constraint, dan konteks agar project tidak kehilangan arah.', 'For Founder decisions, constraints, and continuity so the project does not lose direction.')}</span>
+            </div>
+          </div>
+        </section>
+
         {/* CONTRIBUTE */}
         <section id="contribute" className="section darkSection">
           <div className="sectionHeading">
