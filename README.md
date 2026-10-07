@@ -77,3 +77,7 @@ See SYSTEM_LINK_MAP.md for the canonical synchronization boundary.
 ## Functional boundary
 
 PUBLIC is the external front door. CORE is the canonical runtime and evidence engine. Founder-OS is the Founder decision and continuity layer. A public visitor can discover and submit an opportunity through PUBLIC, but qualification, execution, evidence, and economic truth remain owned by CORE, while consequential decisions are recorded through MEMORY / Founder-OS.
+
+## Functional boundary
+
+PUBLIC is the external front door. CORE is the canonical runtime and evidence engine. Founder-OS is the Founder decision and continuity layer. A public visitor can discover and submit an opportunity through PUBLIC, but qualification, execution, evidence, and economic truth remain owned by CORE, while consequential decisions are recorded through MEMORY / Founder-OS.
