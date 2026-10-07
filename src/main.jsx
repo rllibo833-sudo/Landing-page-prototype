@@ -42,7 +42,7 @@ const paths = [
     number: '03',
     title: 'Berkolaborasi',
     titleEn: 'Collaborate',
-    text: 'Bawa kebutuhan nyata, kemampuan, pilot, jalur implementasi, atau peluang yang dapat dinilai.',
+    text: 'Bawa kebutuhan nyata, pilot, peluang implementasi, atau partner yang relevan.',
     action: 'Ajukan peluang',
     href: '#collaborate',
   },
@@ -52,8 +52,8 @@ const paths = [
     title: 'Founder',
     titleEn: 'Founder',
     text: 'Workspace privat untuk keputusan, review AI, validasi, dan pengendalian arah project.',
-    action: 'Founder workspace',
-    href: CORE,
+    action: 'Buka Founder-OS',
+    href: MEMORY,
     external: true,
   },
 ];
@@ -97,9 +97,9 @@ class AppErrorBoundary extends Component {
             <h1>Halaman sedang memulihkan tampilan.</h1>
             <p>
               Terjadi masalah saat memuat antarmuka. Silakan muat ulang halaman.
-              Jika masalah berulang, gunakan Founder Workspace untuk melanjutkan.
+              Jika masalah berulang, gunakan Founder-OS untuk melanjutkan.
             </p>
-            <a className="button primary" href={CORE}>Buka Founder Workspace <ArrowUpRight /></a>
+            <a className="button primary" href={MEMORY}>Buka Founder-OS <ArrowUpRight /></a>
           </div>
         </main>
       );
@@ -161,8 +161,8 @@ function App() {
             {t('Kolaborasi', 'Collaborate')}
           </button>
 
-          <a href={CORE}>
-            {t('Founder', 'Founder')}
+          <a href={MEMORY}>
+            {t('Founder-OS', 'Founder-OS')}
           </a>
 
           <button
@@ -488,7 +488,7 @@ function App() {
           <div className="sectionHeading">
             <div>
               <div className="eyebrow goldEyebrow">
-                04 / {t('BERKONTRIBUSI', 'CONTRIBUTE')}
+                05 / {t('BERKONTRIBUSI', 'CONTRIBUTE')}
               </div>
 
               <h2>
@@ -567,7 +567,7 @@ function App() {
           <div className="collaborationBox">
             <div className="collaborationMain">
               <div className="eyebrow darkEyebrow">
-                05 / {t('BERKOLABORASI', 'COLLABORATE')}
+                06 / {t('BERKOLABORASI', 'COLLABORATE')}
               </div>
 
               <h2>
@@ -645,7 +645,7 @@ function App() {
         <section className="section creamSection">
           <div className="centerHeading">
             <div className="eyebrow darkEyebrow">
-              06 / {t('CARA BERKEMBANG', 'HOW IT GROWS')}
+              07 / {t('CARA BERKEMBANG', 'HOW IT GROWS')}
             </div>
 
             <h2>
@@ -707,7 +707,7 @@ function App() {
         <section className="founderSection">
           <div className="founderContent">
             <div className="eyebrow goldEyebrow">
-              07 / FOUNDER WORKSPACE
+              08 / FOUNDER-OS
             </div>
 
             <h2>
@@ -719,8 +719,8 @@ function App() {
 
             <p>
               {t(
-                'Workspace Founder dirancang untuk menjawab satu pertanyaan: apa yang membutuhkan keputusan saya?',
-                'The Founder workspace is designed to answer one question: what requires my decision?'
+                'Founder-OS dirancang untuk menjawab satu pertanyaan: apa yang membutuhkan keputusan saya?',
+                'Founder-OS is designed to answer one question: what requires my decision?'
               )}
             </p>
 
@@ -743,8 +743,8 @@ function App() {
                 </span>
               </div>
 
-              <a href={CORE}>
-                {t('Buka workspace', 'Open workspace')}
+              <a href={MEMORY}>
+                {t('Buka Founder-OS', 'Open Founder-OS')}
                 <ArrowUpRight />
               </a>
             </div>
@@ -765,8 +765,8 @@ function App() {
         </div>
 
         <div className="footerLinks">
-          <a href={CORE}>
-            Founder Workspace <ArrowUpRight />
+          <a href={MEMORY}>
+            Founder-OS <ArrowUpRight />
           </a>
 
           <a href={REPO} target="_blank" rel="noreferrer">
