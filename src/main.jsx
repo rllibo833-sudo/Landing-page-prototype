@@ -34,6 +34,7 @@ function App(){
       ['journey',t('Journey','Perjalanan')],
       ['imagine',t('Imagine','Bayangkan')],
       ['economic',t('Work with us','Bekerja sama')],
+      ['collaborate',t('Collaborate','Kolaborasi')],
       ['explore',t('Explore','Jelajahi')]
     ].map(([a,b])=><button key={a} onClick={()=>go(a)}>{b}</button>)}
     <button className="lang" onClick={()=>setId(!id)}>{id?'EN':'ID'}</button>
@@ -105,8 +106,25 @@ function App(){
     <p className="inbound-note">{t('Path: Request → Qualify → Founder Review → Scope & Price → Deliver → Accept → Pay → Prove. No legal, medical, tax, investment, or other regulated advice.','Alur: Request → Qualify → Founder Review → Scope & Price → Deliver → Accept → Pay → Prove. Tidak menerima layanan hukum, medis, pajak, investasi, atau layanan teregulasi lainnya.')}</p>
    </section>
 
+   <section id="collaborate">
+    <label>06 / {t('COLLABORATION GATEWAY','GERBANG KOLABORASI')}</label>
+    <h2>{t('If you can make one real next step possible, there is a place for you here.','Jika Anda dapat membuat satu langkah nyata berikutnya menjadi mungkin, ada tempat untuk Anda di sini.')}</h2>
+    <div className="two">
+      <div>
+       <p>{t('This is an open, evidence-first project. We welcome inbound technical capability, research and domain expertise, credible pilot pathways, implementation partners, and concrete paid problems.','Ini adalah project terbuka yang berorientasi pada bukti. Kami terbuka untuk kemampuan teknis, keahlian riset/domain, jalur pilot yang kredibel, mitra implementasi, dan kebutuhan berbayar yang konkret.')}</p>
+       <p>{t('The strongest signal is specific: a real need, useful capability, credible pathway, or evidence — not a generic promise.','Sinyal terkuat adalah sesuatu yang spesifik: kebutuhan nyata, kemampuan yang berguna, jalur yang kredibel, atau bukti — bukan janji umum.')}</p>
+      </div>
+      <div className="quote"><b>{t('DISCOVER → QUALIFY → MATCH → FOUNDER GATE → DELIVER → PROVE','TEMUKAN → KUALIFIKASI → COCOKKAN → FOUNDER GATE → KERJAKAN → BUKTIKAN')}</b></div>
+    </div>
+    <div className="actions">
+      <a className="primary" href={EMAIL}>{t('Bring a concrete opportunity','Bawa peluang konkret')} <ArrowUpRight/></a>
+      <a className="ghost" href="https://github.com/rllibo833-sudo/kawasan-masjid-1000ha/blob/main/docs/COLLABORATION.md" target="_blank" rel="noreferrer">{t('See collaboration pathways','Lihat jalur kolaborasi')} <ArrowUpRight/></a>
+    </div>
+    <p className="inbound-note">{t('No verified partner or customer is claimed today. This gateway exists to make the right inbound opportunity easier to recognize and qualify.','Belum ada partner atau pelanggan terverifikasi yang diklaim saat ini. Gerbang ini dibuat agar peluang inbound yang tepat lebih mudah dikenali dan dikualifikasi.')}</p>
+   </section>
+
    <section id="explore" className="dark">
-    <label>06 / {t('EXPLORE THE PROJECT','JELAJAHI PROJECT')}</label>
+    <label>07 / {t('EXPLORE THE PROJECT','JELAJAHI PROJECT')}</label>
     <h2>{t('The digital foundation is being built before the physical foundation.','Fondasi digital dibangun sebelum fondasi fisik.')}</h2>
     <p>{t('The Core Project OS holds the project model, research, blueprint, digital ecosystem logic, and future operational infrastructure. It is the place to understand what actually exists and what is still only a plan.','Core Project OS menyimpan model proyek, riset, blueprint, logika ekosistem digital, dan infrastruktur operasional masa depan. Di sanalah kondisi nyata dan hal yang masih berupa rencana dapat dibedakan.')}</p>
     <div className="actions">
