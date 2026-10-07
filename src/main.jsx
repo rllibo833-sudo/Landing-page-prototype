@@ -2,7 +2,7 @@ import React, { Component, useEffect, useState } from 'react';
 import { createRoot } from 'react-dom/client';
 import { ArrowRight, ArrowUpRight, Menu, X, Compass, Users, ShieldCheck, Search, BookOpen, Network, Layers3, Sparkles, Map, FlaskConical } from 'lucide-react';
 import './styles.css';
-import SpatialMap from './SpatialMap.jsx';
+import SpatialMap from './SpatialMapV2.jsx';
 
 const REPO='https://github.com/rllibo833-sudo/kawasan-masjid-core';
 const MEMORY='https://github.com/rllibo833-sudo/Founder-OS';
