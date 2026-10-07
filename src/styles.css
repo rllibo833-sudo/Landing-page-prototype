@@ -1208,3 +1208,49 @@ a {
     padding: 24px;
   }
 }
+
+/* RUNTIME FALLBACK */
+.bootFallback,
+.runtimeFallback {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 32px 22px;
+  background: #122019;
+  color: #fff;
+}
+
+.bootFallback > div,
+.runtimeFallback > div {
+  width: min(760px, 100%);
+}
+
+.bootFallback span,
+.runtimeFallback .eyebrow {
+  color: #e7d5a7;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+}
+
+.bootFallback h1,
+.runtimeFallback h1 {
+  max-width: 760px;
+  margin: 18px 0;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: clamp(42px, 8vw, 76px);
+  line-height: 0.95;
+  letter-spacing: -0.04em;
+}
+
+.bootFallback p,
+.runtimeFallback p {
+  max-width: 600px;
+  color: #c4cec7;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.runtimeFallback .button {
+  margin-top: 14px;
+}

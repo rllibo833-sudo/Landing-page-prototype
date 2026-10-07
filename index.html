@@ -21,5 +21,24 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body><div id="root"></div><script type="module" src="/src/main.jsx"></script></body>
+<body>
+<div id="root">
+  <main class="bootFallback">
+    <div>
+      <span>KAWASAN MASJID 1.000 HA</span>
+      <h1>Memuat project…</h1>
+      <p>Menyiapkan tampilan publik. Jika halaman tidak berubah, muat ulang sekali.</p>
+    </div>
+  </main>
+</div>
+<script>
+  window.addEventListener('error', function (event) {
+    var root = document.getElementById('root');
+    if (root && event && event.error) {
+      root.setAttribute('data-runtime-error', 'true');
+    }
+  });
+</script>
+<script type="module" src="/src/main.jsx"></script>
+</body>
 </html>

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { Component, useState } from 'react';
 import { createRoot } from 'react-dom/client';
 import {
   ArrowRight,
@@ -68,6 +68,45 @@ const systems = [
   'Ekosistem digital',
   'Hunian & ruang publik',
 ];
+
+class AppErrorBoundary extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { hasError: false };
+  }
+
+  static getDerivedStateFromError() {
+    return { hasError: true };
+  }
+
+  componentDidCatch(error) {
+    console.error('Kawasan Masjid public site runtime error:', error);
+    window.dispatchEvent(
+      new CustomEvent('km:runtime-error', {
+        detail: { message: error?.message || 'Unknown runtime error' },
+      })
+    );
+  }
+
+  render() {
+    if (this.state.hasError) {
+      return (
+        <main className="runtimeFallback" role="alert">
+          <div>
+            <span className="eyebrow darkEyebrow">KAWASAN MASJID 1.000 HA</span>
+            <h1>Halaman sedang memulihkan tampilan.</h1>
+            <p>
+              Terjadi masalah saat memuat antarmuka. Silakan muat ulang halaman.
+              Jika masalah berulang, gunakan Founder Workspace untuk melanjutkan.
+            </p>
+            <a className="button primary" href={CORE}>Buka Founder Workspace <ArrowUpRight /></a>
+          </div>
+        </main>
+      );
+    }
+    return this.props.children;
+  }
+}
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -673,4 +712,4 @@ function App() {
   );
 }
 
-createRoot(document.getElementById('root')).render(<App />);
+const root = document.getElementById('root');\n\nif (!root) {\n  throw new Error('Root element #root is missing.');\n}\n\ncreateRoot(root).render(\n  <AppErrorBoundary>\n    <App />\n  </AppErrorBoundary>\n);
