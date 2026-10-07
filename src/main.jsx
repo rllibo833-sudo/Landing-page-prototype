@@ -106,7 +106,7 @@ function App(){
    </section>
 
    <section id="explore" className="dark">
-    <label>05 / {t('EXPLORE THE PROJECT','JELAJAHI PROJECT')}</label>
+    <label>06 / {t('EXPLORE THE PROJECT','JELAJAHI PROJECT')}</label>
     <h2>{t('The digital foundation is being built before the physical foundation.','Fondasi digital dibangun sebelum fondasi fisik.')}</h2>
     <p>{t('The Core Project OS holds the project model, research, blueprint, digital ecosystem logic, and future operational infrastructure. It is the place to understand what actually exists and what is still only a plan.','Core Project OS menyimpan model proyek, riset, blueprint, logika ekosistem digital, dan infrastruktur operasional masa depan. Di sanalah kondisi nyata dan hal yang masih berupa rencana dapat dibedakan.')}</p>
     <div className="actions">
@@ -117,7 +117,7 @@ function App(){
    </section>
   </main>
 
-  <footer><div><b>Kawasan Masjid 1.000 Ha</b><p>{t('Open project for research, development, validation, and gradual collaboration.','Open project untuk riset, pengembangan, validasi, dan kolaborasi bertahap.')}</p></div><div className="links"><a href={CORE}>Core Project</a><a href={EMAIL}>Request a paid pilot</a><a href={REPO} target="_blank" rel="noreferrer">GitHub</a></div></footer>
+  <footer><div><b>Kawasan Masjid 1.000 Ha</b><p>{t('Open project for research, development, validation, and gradual collaboration.','Open project untuk riset, pengembangan, validasi, dan kolaborasi bertahap.')}</p></div><div className="links"><a href={CORE}>Core Project</a><a href={REPO} target="_blank" rel="noreferrer">GitHub</a><a href="https://github.com/rllibo833-sudo/Founder-ai-memory" target="_blank" rel="noreferrer">Founder AI Memory</a><a href={EMAIL}>Request a paid pilot</a></div></footer>
  </div>
 }
 createRoot(document.getElementById('root')).render(<App/>);
