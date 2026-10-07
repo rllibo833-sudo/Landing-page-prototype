@@ -1,73 +1,82 @@
-# Kawasan Masjid 1.000 Ha — Public Website
+# Kawasan Masjid 1.000 Ha — Public Discovery
 
-Public discovery and storytelling layer for the Kawasan Masjid 1.000 Ha project.
+> **An open, long-term Islamic Eco-City vision — built through evidence, digital coordination, and gradual real-world implementation.**
 
-## Role in the three-repository architecture
+This repository is the **PUBLIC** layer of the three-repository system.
 
-These repositories form one system:
-
-- **Founder-ai-memory** — durable Founder AI memory and reusable learning.
-- **kawasan-masjid-1000ha** — canonical Project OS, runnable capabilities, backend, Supabase, evidence, internal workflows, and economic operations.
-- **Landing-page-prototype** — public-facing discovery/storytelling and inbound front door.
-
-## Discovery path
-
-The website is the human-first front door to a larger living Project OS.
+It exists to make the project understandable to a human visitor in a few minutes, then give serious visitors a clear path to:
 
 **VISION → CAPABILITY → REAL NEED → REQUEST → QUALIFY → FOUNDER GATE → DELIVER → ACCEPT → PAY → PROVE**
 
-The public site should help an independent visitor understand the vision and then reach the canonical capability surface. It must not expose private evidence, revenue operations, Founder analytics, SQL migrations, credentials, or sensitive runtime details.
+## Start here
 
-**Public inbound:** fadlibo833@gmail.com
+**Live public site:** https://rllibo833-sudo.github.io/Landing-page-prototype/
 
-## First paid pilot
+**Core Project OS:** https://github.com/rllibo833-sudo/kawasan-masjid-1000ha
+
+**Founder AI Memory:** https://github.com/rllibo833-sudo/Founder-ai-memory
+
+## What the visitor should understand
+
+Kawasan Masjid 1.000 Ha is a long-term vision for a mosque-centered community where eight systems reinforce one another:
+
+1. Worship & civic life
+2. Education & research
+3. Food & agriculture
+4. Water & ecology
+5. Energy & utilities
+6. Local economy
+7. Digital ecosystem
+8. Housing & public life
+
+The digital layer is being built first because it can be researched, tested, measured, and improved before physical development begins.
+
+## First real economic experiment
+
+The public site offers one narrow capability:
 
 **AI-assisted Operations / Research Pack**
 
-A narrow deliverable for a real operational or research need: decision brief, evidence/source register, assumptions and reasoning, recommended workflow, implementation checklist, and limitations.
+For a concrete operational or research need, the output can include a decision brief, evidence/source register, reasoning, recommended workflow, implementation checklist, and limitations.
 
-**Initial pilot floor: Rp100.000.** This is an offer/target, not achieved revenue. Every request is reviewed before scope, price, commitment, or delivery is accepted.
+**Initial pilot floor: Rp100.000.**
 
-See [ECONOMIC_PATH.md](ECONOMIC_PATH.md).
+This is an offer/target, **not claimed revenue**.
 
-## What the Project OS can actually do
+Every request is reviewed before scope, price, commitment, or delivery is accepted.
 
-The digital ecosystem is being validated as a practical problem-solving system, not as a portfolio of speculative features.
+## Why the project is intentionally transparent
 
-The public layer does not expose private runtime internals. It directs a real external request into a qualification and Founder-review path.
-The public website does not claim that external usage, customer payment, partnership, funding, or physical implementation already exists.
+We do not use the website to manufacture traction.
 
-## Public experience
+Current truth:
 
-The website is designed for a human visitor first:
+- customers: **0 verified**
+- payment: **Rp0 verified**
+- partners: **0 verified**
+- physical implementation: **not claimed**
 
-- vision and story;
-- why the project exists;
-- integrated ecosystem;
-- journey from idea to implementation;
-- human-scale picture of the future kawasan;
-- clear paths to explore the Project OS and submit a concrete request.
+**No Proof, No Claim.**
+
+## What serious visitors can bring
+
+The strongest signal is not a generic compliment or feature request. It is:
+
+- a concrete paid problem;
+- an invitation or project-matching opportunity;
+- a credible collaboration pathway;
+- technical expertise that advances the foundation;
+- research/domain evidence relevant to the vision;
+- a practical implementation pathway.
+
+The Founder is the final reviewer and accepter. AI provides research, analysis, implementation, testing, documentation, and operational leverage.
 
 ## Source of truth
 
-Project facts, architecture, evidence contracts, runtime capability, and operational status remain owned by the canonical Project OS. This repository must not silently invent claims or duplicate private operational state.
+Project facts, architecture, evidence, runtime capability, and economic status belong to the canonical Core Project OS. This public repository must not invent claims or expose private operational data.
 
-## Development
+See [ECONOMIC_PATH.md](ECONOMIC_PATH.md).
 
-Run:
+---
 
-`npm install`
-
-`npm run dev`
-
-Build:
-
-`npm run build`
-
-## Deployment
-
-The repository contains a GitHub Actions Pages workflow. Deployment is complete only after a successful deployment run and successful public URL verification.
-
-No paid GitHub plan or trial is part of the project requirement.
-
-**No Proof, No Claim.**
+**Explore the live project, bring a concrete problem, or help prove the next real step.**
