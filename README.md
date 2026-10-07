@@ -6,9 +6,9 @@ This repository is the PUBLIC layer of the three-repository system and is the pu
 
 ## One project, three layers
 
-- Founder-OS — MEMORY / Founder second brain and durable decision context.
+- Founder-OS — MEMORY / Founder second brain, decision layer, and durable context.
 - kawasan-masjid-core — CORE / execution engine, runtime, Supabase, AI workforce, evidence and economic truth.
-- kawasan-masjid-public — PUBLIC / this published website, discovery and inbound entry.
+- kawasan-masjid-public — PUBLIC / this published website, discovery, opportunity gateway, and inbound entry.
 
 This is one project, not three products.
 
@@ -73,3 +73,7 @@ No Proof, No Claim.
 Runtime capability, evidence, and economic truth belong to CORE. This public repository contains only public-safe information.
 
 See SYSTEM_LINK_MAP.md for the canonical synchronization boundary.
+
+## Functional boundary
+
+PUBLIC is the external front door. CORE is the canonical runtime and evidence engine. Founder-OS is the Founder decision and continuity layer. A public visitor can discover and submit an opportunity through PUBLIC, but qualification, execution, evidence, and economic truth remain owned by CORE, while consequential decisions are recorded through MEMORY / Founder-OS.
