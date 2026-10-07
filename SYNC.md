@@ -6,9 +6,9 @@ Canonical contract: [SYSTEM_CONTRACT.md](SYSTEM_CONTRACT.md)
 
 | Layer | Repository | Authority |
 |---|---|---|
-| MEMORY | Founder-ai-memory | durable decisions, facts, constraints, lessons |
-| CORE | kawasan-masjid-1000ha | runtime, backend, data, AI workforce, evidence, economics |
-| PUBLIC | Landing-page-prototype | public story, discovery, inbound |
+| MEMORY / GOVERNANCE | Founder-OS | durable decisions, facts, constraints, lessons, evidence, continuity |
+| CORE / RUNTIME | kawasan-masjid-core | runtime, backend, Supabase, AI workforce, evidence, economics, operational execution |
+| PUBLIC / EXTERNAL | kawasan-masjid-public | public story, discovery, public information, inbound |
 
 ## North Star
 
@@ -40,4 +40,6 @@ Physical implementation: not claimed
 
 ## Synchronization rule
 
-Public content must be derived from the canonical Core truth and durable Founder decisions. It must never invent users, customers, partners, funding, revenue, implementation, or capability.
+Public content must be derived from canonical CORE truth and durable Founder decisions. It must never invent users, customers, partners, funding, revenue, implementation, or capability.
+
+Founder-OS is memory/governance only. It is not a second runtime and does not directly mutate operational CORE/Supabase state.
