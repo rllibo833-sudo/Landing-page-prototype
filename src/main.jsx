@@ -51,7 +51,7 @@ const paths = [
     number: '04',
     title: 'Founder',
     titleEn: 'Founder',
-    text: 'Workspace privat untuk keputusan, review AI, validasi, dan pengendalian arah project.',
+    text: 'Lapisan keputusan Founder untuk review AI, validasi, dan pengendalian arah project.',
     action: 'Buka Founder-OS',
     href: MEMORY,
     external: true,
@@ -770,11 +770,11 @@ function App() {
           </a>
 
           <a href={REPO} target="_blank" rel="noreferrer">
-            GitHub <ArrowUpRight />
+            CORE Engine <ArrowUpRight />
           </a>
 
           <a href={MEMORY} target="_blank" rel="noreferrer">
-            Founder Memory <ArrowUpRight />
+            Founder-OS <ArrowUpRight />
           </a>
 
           <a href={EMAIL}>
