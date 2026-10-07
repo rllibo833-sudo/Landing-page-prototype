@@ -123,8 +123,25 @@ function App(){
     <p className="inbound-note">{t('No verified partner or customer is claimed today. This gateway exists to make the right inbound opportunity easier to recognize and qualify.','Belum ada partner atau pelanggan terverifikasi yang diklaim saat ini. Gerbang ini dibuat agar peluang inbound yang tepat lebih mudah dikenali dan dikualifikasi.')}</p>
    </section>
 
+   <section id="implementation" className="cream">
+    <label>07 / {t('HOW OTHERS CAN USE IT','CARA ORANG LAIN MENGGUNAKANNYA')}</label>
+    <h2>{t('Bring a problem, capability, pilot, or pathway. Leave with something real.','Bawa masalah, kemampuan, pilot, atau jalur implementasi. Tinggalkan hasil yang nyata.')}</h2>
+    <div className="pillars">
+      {[
+        ['01','REAL PROBLEM','Bring a concrete need that can become a reviewable output.'],
+        ['02','CAPABILITY','Bring technical, research, domain, or operational capability.'],
+        ['03','PILOT','Bring a real environment where one defined component can be tested.'],
+        ['04','IMPLEMENTATION','Bring a credible pathway to move one defined part of the vision forward.']
+      ].map(([n,a,b])=><article key={n}><small>{n}</small><h3>{t(a,a==='REAL PROBLEM'?'MASALAH NYATA':a==='CAPABILITY'?'KEMAMPUAN':'')}</h3><p>{b}</p></article>)}
+    </div>
+    <p className="inbound-note">{t('Success means verified output: a tested component, completed pilot, evidence-backed decision, accepted deliverable, or measurable collaboration result — not followers or feature count.','Keberhasilan berarti output yang terverifikasi: komponen teruji, pilot selesai, keputusan berbasis bukti, deliverable diterima, atau hasil kolaborasi yang terukur — bukan jumlah follower atau fitur.')}</p>
+    <div className="actions">
+      <a className="primary" href="https://github.com/rllibo833-sudo/kawasan-masjid-1000ha/blob/main/docs/HOW_TO_USE_AND_IMPLEMENT.md" target="_blank" rel="noreferrer">{t('Read the implementation guide','Baca panduan implementasi')} <ArrowUpRight/></a>
+    </div>
+   </section>
+
    <section id="explore" className="dark">
-    <label>07 / {t('EXPLORE THE PROJECT','JELAJAHI PROJECT')}</label>
+    <label>08 / {t('EXPLORE THE PROJECT','JELAJAHI PROJECT')}</label>
     <h2>{t('The digital foundation is being built before the physical foundation.','Fondasi digital dibangun sebelum fondasi fisik.')}</h2>
     <p>{t('The Core Project OS holds the project model, research, blueprint, digital ecosystem logic, and future operational infrastructure. It is the place to understand what actually exists and what is still only a plan.','Core Project OS menyimpan model proyek, riset, blueprint, logika ekosistem digital, dan infrastruktur operasional masa depan. Di sanalah kondisi nyata dan hal yang masih berupa rencana dapat dibedakan.')}</p>
     <div className="actions">
