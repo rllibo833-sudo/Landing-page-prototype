@@ -203,15 +203,22 @@ function App() {
             </p>
 
             <div className="heroActions">
-              <button className="button primary" onClick={() => goTo('paths')}>
-                {t('Mulai di sini', 'Start here')}
+              <button className="button primary" onClick={() => goTo('collaborate')}>
+                {t('Saya punya kebutuhan', 'I have a need')}
                 <ArrowRight />
               </button>
 
-              <a className="button secondary" href={CORE}>
-                {t('Founder workspace', 'Founder workspace')}
-                <ArrowUpRight />
-              </a>
+              <button className="button secondary" onClick={() => goTo('contribute')}>
+                {t('Saya ingin berkontribusi', 'I want to contribute')}
+                <ArrowRight />
+              </button>
+            </div>
+
+            <div className="heroTertiary">
+              <button onClick={() => goTo('about')}>
+                {t('Jelajahi visi dan sistem', 'Explore the vision and system')}
+                <ArrowRight />
+              </button>
             </div>
 
             <div className="truthLine">
