@@ -144,7 +144,7 @@ button{font:inherit}
 .reveal.isVisible{opacity:1;transform:none}
 .ecosystemShowcase .systemRow{transition:transform .28s ease,background .28s ease,color .28s ease,box-shadow .28s ease}
 .ecosystemShowcase .systemRow:hover{box-shadow:0 14px 30px rgba(7,26,20,.16)}
-.visualBandArt{background-image:url('https://images.unsplash.com/photo-1771945037187-cf4bf5668e69?auto=format&fit=crop&fm=jpg&q=78&w=1600');background-size:cover;background-position:center}
+.visualBandArt{background-image:url('https://images.unsplash.com/photo-1754437958764-54d0837f254e?auto=format&fit=crop&fm=jpg&q=78&w=1800');background-size:cover;background-position:center}
 .visualBandArt:after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(7,26,20,.05),rgba(7,26,20,.62))}
 .visualBandArt>*{z-index:2}
 .visualBandArt .sun,.visualBandArt .land,.visualBandArt .mosqueSilhouette{opacity:.34}
