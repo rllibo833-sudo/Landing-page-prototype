@@ -712,4 +712,14 @@ function App() {
   );
 }
 
-const root = document.getElementById('root');\n\nif (!root) {\n  throw new Error('Root element #root is missing.');\n}\n\ncreateRoot(root).render(\n  <AppErrorBoundary>\n    <App />\n  </AppErrorBoundary>\n);
+const root = document.getElementById('root');
+
+if (!root) {
+  throw new Error('Root element #root is missing.');
+}
+
+createRoot(root).render(
+  <AppErrorBoundary>
+    <App />
+  </AppErrorBoundary>
+);
