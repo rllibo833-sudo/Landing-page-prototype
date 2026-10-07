@@ -53,7 +53,7 @@ export default function SpatialMapV2(){
    <div className="spatialV2Canvas">
     <div className="mapToolbar">
       <div className="mapSearch"><span>⌕</span><b>Explore kawasan</b></div>
-      <div className="mapTools"><button onClick={()=>setZoom(z=>Math.min(2.8,z+.2))}>+</button><button onClick={()=>setZoom(z=>Math.max(.75,z-.2)}>−</button><button onClick={reset}>↺</button></div>
+      <div className="mapTools"><button onClick={()=>setZoom(z=>Math.min(2.8,z+.2))}>+</button><button onClick={()=>setZoom(z=>Math.max(.75,z-.2))}>−</button><button onClick={reset}>↺</button></div>
     </div>
     <div className="mapHud"><b>BLUEPRINT SOURCE</b><span>CORE · LIVE IMAGE</span></div>
     <div className="north">N<strong>↑</strong></div>
