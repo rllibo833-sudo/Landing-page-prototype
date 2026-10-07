@@ -13,9 +13,9 @@ import {
 } from 'lucide-react';
 import './styles.css';
 
-const CORE = 'https://rllibo833-sudo.github.io/kawasan-masjid-1000ha/';
-const REPO = 'https://github.com/rllibo833-sudo/kawasan-masjid-1000ha';
-const MEMORY = 'https://github.com/rllibo833-sudo/Founder-ai-memory';
+const CORE = 'https://github.com/rllibo833-sudo/kawasan-masjid-core';
+const REPO = 'https://github.com/rllibo833-sudo/kawasan-masjid-core';
+const MEMORY = 'https://github.com/rllibo833-sudo/Founder-OS';
 const EMAIL = 'mailto:fadlibo833@gmail.com';
 
 const paths = [
