@@ -69,9 +69,9 @@ This is an offer/target, **not claimed revenue**.
 
 ## Where to continue
 
-- **Public website:** https://rllibo833-sudo.github.io/Landing-page-prototype/
-- **CORE Project OS:** https://github.com/rllibo833-sudo/kawasan-masjid-1000ha
-- **MEMORY:** https://github.com/rllibo833-sudo/Founder-ai-memory
+- **Public website:** https://rllibo833-sudo.github.io/kawasan-masjid-public/
+- **CORE Project OS:** https://github.com/rllibo833-sudo/kawasan-masjid-core
+- **MEMORY:** https://github.com/rllibo833-sudo/Founder-OS
 
 A serious visitor should be able to inspect the project before deciding whether to engage.
 
