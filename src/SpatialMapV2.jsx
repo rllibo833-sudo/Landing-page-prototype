@@ -132,7 +132,7 @@ export default function SpatialMapV2(){
     >
       <div className="blueprintLayer" style={{transform}}>
        <div className="blueprintMapCrop"><img src={BLUEPRINT} alt="Peta utama masterplan Kawasan Masjid 1.000 Ha" draggable="false"/></div>
-       {POINTS.map(p=>
+       {POINTS.filter(p=>p.y<=77).map(p=>
         <button
          key={p.id}
          className={'mapPoint '+(selected?.id===p.id?'selected':'')}
