@@ -1,39 +1,54 @@
-# Three-Repository System Link Map
+# THREE-REPOSITORY SYSTEM LINK MAP
 
-This public repository is one layer of the same project. The three repositories are linked by role, not duplicated runtime data.
-
-## Canonical layers
+This repository is the **PUBLIC / EXTERNAL** layer of one Founder-owned project with three coordinated repositories.
 
 | Layer | Repository | Owns |
 |---|---|---|
-| MEMORY / GOVERNANCE | https://github.com/rllibo833-sudo/Founder-OS | Founder decisions, strategy, constraints, continuity, verified context |
-| CORE / RUNTIME | https://github.com/rllibo833-sudo/kawasan-masjid-core | Runtime, Supabase, AI workforce, evidence, economic truth, operational execution |
-| PUBLIC / EXTERNAL | https://github.com/rllibo833-sudo/kawasan-masjid-public | Public website, discovery, public-safe information, inbound |
+| MEMORY | `rllibo833-sudo/Founder-OS` | Founder decisions, strategy, governance, constraints, continuity |
+| CORE | `rllibo833-sudo/kawasan-masjid-core` | Runtime, Supabase, AI workforce, evidence, economic truth, operational execution |
+| PUBLIC | `rllibo833-sudo/kawasan-masjid-public` | Public website, discovery, public-safe information, inbound collaboration |
 
-## Flow
+## Authority and synchronization
 
-PUBLIC → discovery/request → CORE qualification & execution → Founder Gate → verified result → PUBLIC-safe update
+- MEMORY is authoritative for durable Founder decisions, governance, strategy, constraints, and continuity.
+- CORE is authoritative for runtime capability, backend/data state, AI workforce, evidence, economic records, and operational execution.
+- PUBLIC is authoritative only for public presentation and public-safe entry.
+- Flow: **MEMORY → CORE → PUBLIC**.
+- Verified results flow back: **CORE evidence/result → MEMORY durable record → PUBLIC-safe update**.
+- PUBLIC must never present CORE capabilities or outcomes as real unless they are actually deployed/verified.
 
-MEMORY remains the decision/context layer. CORE remains authoritative for runtime, evidence, and economic truth. PUBLIC contains only public-safe information.
+## Public truth contract
 
-## Current economic truth
+**NO PROOF, NO CLAIM.**
 
-- Customers: 0 verified
-- Partners: 0 verified
-- Payment: Rp0 verified
+Current verified baseline:
+- Customers: 0
+- Partners: 0
+- Payment: Rp0
+- Verified margin: Rp0
 - Physical implementation: not claimed
 - Initial pilot floor: Rp100.000 target/offer, not revenue
 
-## Synchronization rule
+## Boundary
 
-Changes affecting project identity, roles, current truth, or public claims must be reflected consistently across the three repositories. No repository may claim evidence owned by another layer.
+- PUBLIC contains public-safe presentation and inbound pathways.
+- CORE owns runtime, evidence, economic records, and operational execution.
+- MEMORY owns durable decisions and continuity.
+- No credentials, service-role keys, private evidence, or internal secrets belong in PUBLIC.
 
-**No Proof, No Claim.**
+## Change protocol
 
-## Entry-point contract
+1. CORE verifies a material capability/result.
+2. MEMORY records durable decisions or constraints when needed.
+3. PUBLIC receives only the safe external subset.
+4. Before release, cross-check names, links, truth claims, and evidence references.
+5. Link to authoritative repositories instead of duplicating volatile/private data.
 
-- **PUBLIC:** people enter here to understand the vision, bring a need/opportunity, or contribute.
-- **CORE:** qualified work, runtime, evidence, economic records, and operational execution live here.
-- **MEMORY / Founder-OS:** durable Founder decisions, constraints, reviews, and continuity live here.
-- PUBLIC must not pretend CORE capabilities are public UI unless a public-safe interface is actually deployed.
-- Founder-OS must not become a second runtime or duplicate CORE data.
+## Canonical links
+
+- MEMORY: https://github.com/rllibo833-sudo/Founder-OS
+- CORE: https://github.com/rllibo833-sudo/kawasan-masjid-core
+- PUBLIC: https://github.com/rllibo833-sudo/kawasan-masjid-public
+- Published PUBLIC: https://rllibo833-sudo.github.io/kawasan-masjid-public/
+
+**One project. Three layers. One truth contract.**
