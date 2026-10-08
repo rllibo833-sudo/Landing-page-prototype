@@ -36,3 +36,6 @@
 @media(max-width:900px){.spatialV2{padding:80px 18px}.spatialV2Head{display:block}.spatialV2Controls{margin-top:18px}.spatialV2Frame{min-height:560px}.spatialV2Canvas{min-height:560px;height:70vh}.blueprintLayer{width:150%}}
 @media(max-width:560px){.spatialV2Head h2{font-size:44px}.spatialV2Canvas{min-height:470px;height:66vh}.mapSearch b{display:none}.mapAttribution{display:none}.blueprintLayer{width:190%}.mapPopup{left:14px;top:14px;min-width:135px}.north{right:64px;top:76px}}
 @media(prefers-reduced-motion:reduce){.mapPoint i{animation:none}.blueprintLayer{transition:none}}
+/* Zone storytelling popup */
+.mapPopup{min-width:190px;display:flex!important;flex-direction:column;gap:5px;text-align:left}.mapPopup b{font:800 12px Manrope;color:#172033}.mapPopup small{font:800 8px Manrope!important;color:#4285f4!important;letter-spacing:.08em}.mapPopup strong{font:800 9px Manrope;color:#334155}.mapPopup em{font:400 9px/1.5 Manrope;color:#64748b;font-style:normal;white-space:normal}
+@media(max-width:560px){.mapPopup{min-width:165px}.mapPopup em{font-size:8px}}
