@@ -34,6 +34,33 @@ const POINTS=[
 ];
 
 const tone={LIFE:'#34a853',KNOW:'#4285f4',ACT:'#ea4335',PURPOSE:'#fbbc04'};
+const ROLE={
+ {id:'10',role:'Local economy',desc:'Kuliner dan UMKM sebagai pintu masuk ekonomi lokal.'},
+ {id:'11',role:'Daily worship',desc:'Masjid pendukung untuk aktivitas ibadah harian.'},
+ {id:'12',role:'Community housing',desc:'Hunian masyarakat sebagai bagian dari ekosistem, bukan sekadar blok rumah.'},
+ {id:'13',role:'Stewardship',desc:'Hunian pengurus untuk menjaga keberlangsungan pengelolaan.'},
+ {id:'14',role:'Operations',desc:'Hunian staf dan pengelola untuk mendukung operasi kawasan.'},
+ {id:'15',role:'Clean mobility',desc:'Hub mobilitas untuk konektivitas yang lebih ringan dan ramah lingkungan.'},
+ {id:'16',role:'Recreation & ecology',desc:'Danau dan ruang rekreasi sebagai ruang hidup bersama.'},
+ {id:'17',role:'Water resilience',desc:'Air sebagai infrastruktur ekologis dan ketahanan kawasan.'},
+ {id:'18',role:'Food & learning',desc:'Pertanian sebagai sumber pangan sekaligus ruang belajar.'},
+ {id:'19',role:'Food & livelihood',desc:'Peternakan sebagai bagian dari pangan dan ekonomi produktif.'},
+ {id:'20',role:'Sport & tradition',desc:'Olahraga, pendidikan, dan aktivitas budaya dalam satu ruang.'},
+ {id:'21',role:'Agriculture economy',desc:'Produksi pangan dan perkebunan untuk rantai nilai lokal.'},
+ {id:'22',role:'Access & mobility',desc:'Parkir terpusat menjaga pusat kawasan tetap lebih ramah pejalan kaki.'},
+ {id:'23',role:'Gateway',desc:'Pintu masuk pertama menuju ekosistem kawasan.'},
+ {id:'24',role:'Circulation',desc:'Ring road mengatur akses kendaraan di perimeter kawasan.'},
+ {id:'25',role:'Circular infrastructure',desc:'Utilitas dan sampah menjadi bagian dari sistem yang harus dikelola.'},
+ {id:'01',role:'Spiritual & civic center',desc:'Orientasi ibadah, komunitas, dan kehidupan kawasan.'},
+ {id:'02',role:'Gathering & public life',desc:'Ruang pertemuan yang menghubungkan masjid dengan aktivitas publik.'},
+ {id:'03',role:'Ecology & public life',desc:'Ruang hijau sebagai bagian dari kualitas hidup dan ekologi.'},
+ {id:'04',role:'Knowledge infrastructure',desc:'Pengetahuan menjadi aset bersama yang dapat diwariskan.'},
+ {id:'05',role:'Literacy & community',desc:'Tempat bertemu, belajar, berdiskusi, dan membangun koneksi.'},
+ {id:'06',role:'Human development',desc:'Pendidikan sebagai fondasi generasi dan kapasitas kawasan.'},
+ {id:'07',role:'Health & wellbeing',desc:'Aktivitas fisik dan kesehatan sebagai bagian dari kehidupan sehari-hari.'},
+ {id:'08',role:'Healthcare access',desc:'Layanan kesehatan yang terhubung dengan komunitas.'},
+ {id:'09',role:'Learning community',desc:'Hunian pendidikan yang mendukung pembentukan generasi.'},
+};
 
 export default function SpatialMapV2(){
  const viewport=useRef(null);
@@ -113,7 +140,7 @@ export default function SpatialMapV2(){
          aria-label={p.name}
         >
          <i/>
-         {selected?.id===p.id&&<span className="mapPopup"><b>{p.name}</b><small>{p.type} · exploration layer</small></span>}
+         {selected?.id===p.id&&<span className="mapPopup"><b>{p.name}</b><small>{p.type} · exploration layer</small><strong>{ROLE[p.id]?.role}</strong><em>{ROLE[p.id]?.desc}</em></span>}
         </button>
        )}
       </div>
