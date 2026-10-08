@@ -43,3 +43,8 @@ Physical implementation: not claimed
 Public content must be derived from canonical CORE truth and durable Founder decisions. It must never invent users, customers, partners, funding, revenue, implementation, or capability.
 
 Founder-OS is memory/governance only. It is not a second runtime and does not directly mutate operational CORE/Supabase state.
+
+
+## Release QA — 2026-10-08
+
+Android-first visitor audit found and fixed a production build gap: Support was linked and existed as support.html, but was absent from Vite multi-page inputs. The Support entry is now included. Before visitor review, verify navigation, build entries, mobile interaction, accessibility, and evidence boundaries.
