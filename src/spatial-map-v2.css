@@ -39,3 +39,6 @@
 /* Zone storytelling popup */
 .mapPopup{min-width:190px;display:flex!important;flex-direction:column;gap:5px;text-align:left}.mapPopup b{font:800 12px Manrope;color:#172033}.mapPopup small{font:800 8px Manrope!important;color:#4285f4!important;letter-spacing:.08em}.mapPopup strong{font:800 9px Manrope;color:#334155}.mapPopup em{font:400 9px/1.5 Manrope;color:#64748b;font-style:normal;white-space:normal}
 @media(max-width:560px){.mapPopup{min-width:165px}.mapPopup em{font-size:8px}}
+
+.mapLens{display:block!important;margin-top:7px;color:#8fd3ff!important;font:800 7px Manrope!important;letter-spacing:.1em;text-transform:uppercase}
+.mapPopup{min-width:210px!important;max-width:260px!important}
