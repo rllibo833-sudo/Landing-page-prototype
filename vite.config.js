@@ -11,6 +11,7 @@ export default defineConfig({
     system:resolve(__dirname,'system.html'),
     research:resolve(__dirname,'research.html'),
     collaborate:resolve(__dirname,'collaborate.html'),
-    about:resolve(__dirname,'about.html')
+    about:resolve(__dirname,'about.html'),
+    support:resolve(__dirname,'support.html')
   }}}
 });
