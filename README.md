@@ -88,3 +88,4 @@ The current PUBLIC experience includes a dedicated operating-system view and int
 PUBLIC now includes a Support route that turns interest into four concrete paths: **Connect, Contribute, Pilot, Amplify**. It is intentionally discovery-first: no donation, sponsor, partner, customer, revenue, or outcome claim is made until CORE contains verifiable evidence.
 
 Storytelling principle: **VISION → CURIOSITY → DISCOVERY → CONTRIBUTION → PROOF → VALUE**.
+\n\n## 3D / Roblox visualization sync\n\nThe supplied Roblox Build Specification is now synchronized as the downstream visualization contract for the long-term masterplan. See [docs/ROBLOX_BUILD_SPEC.md](docs/ROBLOX_BUILD_SPEC.md). PUBLIC may visualize and explain the future spatial system, but must not present the physical 1,000 Ha kawasan as already built.\n
