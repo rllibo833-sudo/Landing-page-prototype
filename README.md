@@ -82,3 +82,9 @@ See SYSTEM_LINK_MAP.md for the synchronization boundary.
 ## Experience contract
 
 The current PUBLIC experience includes a dedicated operating-system view and interactive research filtering. These are presentation-layer experiences: runtime truth remains in CORE and durable direction remains in Founder-OS.
+
+## Support gateway
+
+PUBLIC now includes a Support route that turns interest into four concrete paths: **Connect, Contribute, Pilot, Amplify**. It is intentionally discovery-first: no donation, sponsor, partner, customer, revenue, or outcome claim is made until CORE contains verifiable evidence.
+
+Storytelling principle: **VISION → CURIOSITY → DISCOVERY → CONTRIBUTION → PROOF → VALUE**.
