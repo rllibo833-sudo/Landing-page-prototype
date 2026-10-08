@@ -48,3 +48,19 @@ Founder-OS is memory/governance only. It is not a second runtime and does not di
 ## Release QA — 2026-10-08
 
 Android-first visitor audit found and fixed a production build gap: Support was linked and existed as support.html, but was absent from Vite multi-page inputs. The Support entry is now included. Before visitor review, verify navigation, build entries, mobile interaction, accessibility, and evidence boundaries.
+
+
+## Founder visitor review — 2026-10-08
+
+Founder performed a skeptical visitor review. Main findings: the vision felt too ambitious and directionally scattered; the blueprint was compelling but the raw PNG mixed map, legend, data and facility details; the 8-system section became unclear below the visual; visitors could not tell what they could contribute, what value they receive, who works on contributions, or who checks the work; Support felt too abstract because it only opened a Founder contact; Research was the strongest knowledge-oriented experience; navigation was already strong.
+
+PUBLIC response:
+- clarified the first-screen story: this is not a finished city, but an open project turning a long-term physical vision into small, testable steps;
+- made the 8-system default state explain why the systems exist and how a visitor can use them;
+- added concrete entry paths: NEED, CAPABILITY, KNOWLEDGE, RESOURCE;
+- added visible answers for WHO works, WHO checks, and current proof status;
+- made Support explain the work/verification/feedback loop rather than presenting a generic contact gateway;
+- separated the map presentation from the blueprint's legend/data/detail layer at the experience level, with a dedicated zone directory below the map;
+- kept the source-of-truth boundary intact: CORE blueprint remains authoritative, while PUBLIC is a presentation/discovery layer.
+
+Positioning lesson: the real-world analogy is closer to an integrated township/ecosystem than a generic mosque-management app. This is a positioning insight, not a claim of equivalence to established developers or townships.
