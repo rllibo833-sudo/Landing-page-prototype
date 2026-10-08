@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://rllibo833-sudo.github.io/kawasan-masjid-public/</loc>
-  </url>
+  <url><loc>https://rllibo833-sudo.github.io/kawasan-masjid-public/</loc></url>
+  <url><loc>https://rllibo833-sudo.github.io/kawasan-masjid-public/vision.html</loc></url>
+  <url><loc>https://rllibo833-sudo.github.io/kawasan-masjid-public/ecosystem.html</loc></url>
+  <url><loc>https://rllibo833-sudo.github.io/kawasan-masjid-public/system.html</loc></url>
+  <url><loc>https://rllibo833-sudo.github.io/kawasan-masjid-public/research.html</loc></url>
+  <url><loc>https://rllibo833-sudo.github.io/kawasan-masjid-public/collaborate.html</loc></url>
+  <url><loc>https://rllibo833-sudo.github.io/kawasan-masjid-public/support.html</loc></url>
+  <url><loc>https://rllibo833-sudo.github.io/kawasan-masjid-public/about.html</loc></url>
 </urlset>
