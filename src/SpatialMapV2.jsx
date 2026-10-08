@@ -3,19 +3,34 @@ import './spatial-map-v2.css';
 
 const BLUEPRINT='https://raw.githubusercontent.com/rllibo833-sudo/kawasan-masjid-core/main/IMG_20260921_131112.png';
 
+// The CORE blueprint is the spatial source of truth. Coordinates are interaction anchors only; the artwork itself remains unchanged.
+
 const POINTS=[
- {id:'01',name:'Masjid Utama',type:'LIFE',x:50,y:49},
- {id:'02',name:'Plaza & Civil Life',type:'LIFE',x:50,y:40},
- {id:'03',name:'Education / Library',type:'KNOW',x:50,y:27},
- {id:'04',name:'Health & Community',type:'LIFE',x:31,y:43},
- {id:'05',name:'Culinary / UMKM',type:'ACT',x:69,y:42},
- {id:'06',name:'Agriculture / Hydroponic',type:'LIFE',x:73,y:72},
- {id:'07',name:'Livestock',type:'LIFE',x:83,y:62},
- {id:'08',name:'Water & Ecology',type:'LIFE',x:23,y:27},
- {id:'09',name:'Energy / Waste Utilities',type:'ACT',x:77,y:79},
- {id:'10',name:'Sports / Archery / Equestrian',type:'ACT',x:67,y:20},
- {id:'11',name:'Living & Housing',type:'PURPOSE',x:34,y:63},
- {id:'12',name:'Mobility / Parking Hub',type:'KNOW',x:50,y:84}
+ {id:'01',name:'Masjid Utama',type:'PURPOSE',x:49.5,y:48},
+ {id:'02',name:'Plaza Utama',type:'PURPOSE',x:49.5,y:38},
+ {id:'03',name:'Taman & Ruang Hijau',type:'LIFE',x:35,y:46},
+ {id:'04',name:'Perpustakaan',type:'KNOW',x:43,y:40},
+ {id:'05',name:'Coffee Shop & Pusat Literasi',type:'KNOW',x:40,y:48},
+ {id:'06',name:'Pusat Pendidikan',type:'KNOW',x:27,y:45},
+ {id:'07',name:'Sport Center & Kesehatan',type:'LIFE',x:29,y:53},
+ {id:'08',name:'Klinik & Rumah Sakit',type:'LIFE',x:36,y:57},
+ {id:'09',name:'Asrama Santri',type:'KNOW',x:55,y:67},
+ {id:'10',name:'Pusat Kuliner & UMKM',type:'ACT',x:63,y:59},
+ {id:'11',name:'Masjid Kecil',type:'PURPOSE',x:52,y:57},
+ {id:'12',name:'Perumahan Masyarakat',type:'PURPOSE',x:21,y:71},
+ {id:'13',name:'Rumah Pengurus Inti',type:'PURPOSE',x:70,y:48},
+ {id:'14',name:'Rusun Staf & Pengelola',type:'PURPOSE',x:71,y:57},
+ {id:'15',name:'Hub Sepeda Listrik',type:'ACT',x:49,y:30},
+ {id:'16',name:'Taman Rekreasi & Danau',type:'LIFE',x:23,y:27},
+ {id:'17',name:'Pengelolaan Air & Danau Buatan',type:'LIFE',x:17,y:37},
+ {id:'18',name:'Area Pertanian',type:'LIFE',x:49,y:10},
+ {id:'19',name:'Peternakan',type:'LIFE',x:62,y:14},
+ {id:'20',name:'Olahraga Panahan + Berkuda',type:'ACT',x:69,y:22},
+ {id:'21',name:'Pertanian & Perkebunan',type:'LIFE',x:78,y:77},
+ {id:'22',name:'Area Parkir',type:'ACT',x:41,y:79},
+ {id:'23',name:'Pintu Utama',type:'ACT',x:49,y:86},
+ {id:'24',name:'Jalan Lingkar Luar',type:'ACT',x:49,y:91},
+ {id:'25',name:'Utilitas & Pengelolaan Sampah',type:'ACT',x:70,y:80}
 ];
 
 const tone={LIFE:'#34a853',KNOW:'#4285f4',ACT:'#ea4335',PURPOSE:'#fbbc04'};
@@ -58,7 +73,7 @@ export default function SpatialMapV2(){
    <div>
     <span>CORE BLUEPRINT · INTERACTIVE MAP</span>
     <h2>Jelajahi kawasan<br/><i>seperti peta.</i></h2>
-    <p>Blueprint CORE menjadi base layer. Zoom, pan, marker, dan bird's-eye view hanya menambahkan interaksi tanpa mengubah geometri sumber.</p>
+    <p>Blueprint CORE adalah gambaran visi fisik jangka panjang. PUBLIC tidak mengklaim kawasan ini sudah terbangun; layer ini membantu pengunjung memahami tujuan besar dan langkah-langkah digital kecil yang sedang dikerjakan menuju ke sana.</p>
    </div>
    <div className="spatialV2Controls">
     <button className={view==='map'?'on':''} onClick={()=>setView('map')}>MAP</button>
