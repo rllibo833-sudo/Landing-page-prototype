@@ -42,3 +42,13 @@
 
 .mapLens{display:block!important;margin-top:7px;color:#8fd3ff!important;font:800 7px Manrope!important;letter-spacing:.1em;text-transform:uppercase}
 .mapPopup{min-width:210px!important;max-width:260px!important}
+
+
+/* Founder visitor review: keep the map visually primary; move legend/data into a separate layer. */
+.blueprintMapCrop{position:relative;overflow:hidden;clip-path:inset(0 20% 23% 0 round 18px)}
+.blueprintMapCrop img{display:block;width:100%;height:auto}
+.mapLegendSplit{display:grid;grid-template-columns:minmax(220px,.75fr) minmax(0,2fr);gap:24px;padding:24px;background:#fff;border:1px solid #dbe2ea;border-top:0;border-radius:0 0 24px 24px}
+.mapLegendSplit>div:first-child{padding:18px 4px}.mapLegendSplit>div:first-child>span{font:800 9px Manrope;letter-spacing:.16em;color:#4285f4}.mapLegendSplit h3{margin:10px 0 8px;font:800 24px/1.05 Manrope;letter-spacing:-.03em;color:#172033}.mapLegendSplit p{margin:0;color:#64748b;font:400 12px/1.7 Manrope}
+.zoneDirectory{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;max-height:250px;overflow:auto;padding-right:4px}.zoneDirectory button{display:grid;grid-template-columns:26px 1fr;gap:2px 8px;align-items:center;text-align:left;border:1px solid #e5eaf0;background:#f8fafc;border-radius:10px;padding:9px;cursor:pointer}.zoneDirectory button:hover{border-color:#4285f4;background:#fff}.zoneDirectory b{grid-row:1/3;font:800 9px Manrope;color:#4285f4}.zoneDirectory span{font:800 10px Manrope;color:#172033}.zoneDirectory small{font:700 7px Manrope;letter-spacing:.05em;color:#7a8797}
+@media(max-width:900px){.mapLegendSplit{grid-template-columns:1fr}.zoneDirectory{grid-template-columns:repeat(2,minmax(0,1fr));max-height:none}.blueprintMapCrop{clip-path:inset(0 14% 20% 0 round 14px)}}
+@media(max-width:560px){.mapLegendSplit{padding:18px;gap:16px}.mapLegendSplit h3{font-size:21px}.zoneDirectory{grid-template-columns:1fr}.blueprintMapCrop{clip-path:inset(0 7% 17% 0 round 12px)}}
