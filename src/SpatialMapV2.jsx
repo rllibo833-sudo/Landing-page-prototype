@@ -35,31 +35,31 @@ const POINTS=[
 
 const tone={LIFE:'#34a853',KNOW:'#4285f4',ACT:'#ea4335',PURPOSE:'#fbbc04'};
 const ROLE={
- {id:'10',role:'Local economy',desc:'Kuliner dan UMKM sebagai pintu masuk ekonomi lokal.'},
- {id:'11',role:'Daily worship',desc:'Masjid pendukung untuk aktivitas ibadah harian.'},
- {id:'12',role:'Community housing',desc:'Hunian masyarakat sebagai bagian dari ekosistem, bukan sekadar blok rumah.'},
- {id:'13',role:'Stewardship',desc:'Hunian pengurus untuk menjaga keberlangsungan pengelolaan.'},
- {id:'14',role:'Operations',desc:'Hunian staf dan pengelola untuk mendukung operasi kawasan.'},
- {id:'15',role:'Clean mobility',desc:'Hub mobilitas untuk konektivitas yang lebih ringan dan ramah lingkungan.'},
- {id:'16',role:'Recreation & ecology',desc:'Danau dan ruang rekreasi sebagai ruang hidup bersama.'},
- {id:'17',role:'Water resilience',desc:'Air sebagai infrastruktur ekologis dan ketahanan kawasan.'},
- {id:'18',role:'Food & learning',desc:'Pertanian sebagai sumber pangan sekaligus ruang belajar.'},
- {id:'19',role:'Food & livelihood',desc:'Peternakan sebagai bagian dari pangan dan ekonomi produktif.'},
- {id:'20',role:'Sport & tradition',desc:'Olahraga, pendidikan, dan aktivitas budaya dalam satu ruang.'},
- {id:'21',role:'Agriculture economy',desc:'Produksi pangan dan perkebunan untuk rantai nilai lokal.'},
- {id:'22',role:'Access & mobility',desc:'Parkir terpusat menjaga pusat kawasan tetap lebih ramah pejalan kaki.'},
- {id:'23',role:'Gateway',desc:'Pintu masuk pertama menuju ekosistem kawasan.'},
- {id:'24',role:'Circulation',desc:'Ring road mengatur akses kendaraan di perimeter kawasan.'},
- {id:'25',role:'Circular infrastructure',desc:'Utilitas dan sampah menjadi bagian dari sistem yang harus dikelola.'},
- {id:'01',role:'Spiritual & civic center',desc:'Orientasi ibadah, komunitas, dan kehidupan kawasan.'},
- {id:'02',role:'Gathering & public life',desc:'Ruang pertemuan yang menghubungkan masjid dengan aktivitas publik.'},
- {id:'03',role:'Ecology & public life',desc:'Ruang hijau sebagai bagian dari kualitas hidup dan ekologi.'},
- {id:'04',role:'Knowledge infrastructure',desc:'Pengetahuan menjadi aset bersama yang dapat diwariskan.'},
- {id:'05',role:'Literacy & community',desc:'Tempat bertemu, belajar, berdiskusi, dan membangun koneksi.'},
- {id:'06',role:'Human development',desc:'Pendidikan sebagai fondasi generasi dan kapasitas kawasan.'},
- {id:'07',role:'Health & wellbeing',desc:'Aktivitas fisik dan kesehatan sebagai bagian dari kehidupan sehari-hari.'},
- {id:'08',role:'Healthcare access',desc:'Layanan kesehatan yang terhubung dengan komunitas.'},
- {id:'09',role:'Learning community',desc:'Hunian pendidikan yang mendukung pembentukan generasi.'},
+ '01':{role:'Spiritual & civic center',desc:'Orientasi ibadah, komunitas, dan kehidupan kawasan.',lens:'MOSQUE-CENTERED LIFE'},
+ '02':{role:'Gathering & public life',desc:'Ruang pertemuan yang menghubungkan masjid dengan aktivitas publik.',lens:'PUBLIC LIFE'},
+ '03':{role:'Ecology & public life',desc:'Ruang hijau sebagai bagian dari kualitas hidup dan ekologi.',lens:'REGENERATIVE ECOLOGY'},
+ '04':{role:'Knowledge infrastructure',desc:'Pengetahuan menjadi aset bersama yang dapat diwariskan.',lens:'KNOWLEDGE'},
+ '05':{role:'Literacy & community',desc:'Tempat bertemu, belajar, berdiskusi, dan membangun koneksi.',lens:'COMMUNITY LEARNING'},
+ '06':{role:'Human development',desc:'Pendidikan sebagai fondasi generasi dan kapasitas kawasan.',lens:'HUMAN DEVELOPMENT'},
+ '07':{role:'Health & wellbeing',desc:'Aktivitas fisik dan kesehatan sebagai bagian dari kehidupan sehari-hari.',lens:'HEALTH'},
+ '08':{role:'Healthcare access',desc:'Layanan kesehatan yang terhubung dengan komunitas.',lens:'HEALTH'},
+ '09':{role:'Learning community',desc:'Hunian pendidikan yang mendukung pembentukan generasi.',lens:'EDUCATION'},
+ '10':{role:'Local economy',desc:'Kuliner dan UMKM sebagai pintu masuk ekonomi lokal.',lens:'LOCAL ECONOMY'},
+ '11':{role:'Daily worship',desc:'Masjid pendukung untuk aktivitas ibadah harian.',lens:'MOSQUE-CENTERED LIFE'},
+ '12':{role:'Community housing',desc:'Hunian masyarakat sebagai bagian dari ekosistem, bukan sekadar blok rumah.',lens:'LIVING SYSTEM'},
+ '13':{role:'Stewardship',desc:'Hunian pengurus untuk menjaga keberlangsungan pengelolaan.',lens:'GOVERNANCE'},
+ '14':{role:'Operations',desc:'Hunian staf dan pengelola untuk mendukung operasi kawasan.',lens:'OPERATIONS'},
+ '15':{role:'Clean mobility',desc:'Hub mobilitas untuk konektivitas yang lebih ringan dan ramah lingkungan.',lens:'MOBILITY'},
+ '16':{role:'Recreation & ecology',desc:'Danau dan ruang rekreasi sebagai ruang hidup bersama.',lens:'REGENERATIVE ECOLOGY'},
+ '17':{role:'Water resilience',desc:'Air sebagai infrastruktur ekologis dan ketahanan kawasan.',lens:'WATER SYSTEM'},
+ '18':{role:'Food & learning',desc:'Pertanian sebagai sumber pangan sekaligus ruang belajar.',lens:'FOOD SYSTEM'},
+ '19':{role:'Food & livelihood',desc:'Peternakan sebagai bagian dari pangan dan ekonomi produktif.',lens:'FOOD SYSTEM'},
+ '20':{role:'Sport & tradition',desc:'Olahraga, pendidikan, dan aktivitas budaya dalam satu ruang.',lens:'HEALTH & CULTURE'},
+ '21':{role:'Agriculture economy',desc:'Produksi pangan dan perkebunan untuk rantai nilai lokal.',lens:'LOCAL ECONOMY'},
+ '22':{role:'Access & mobility',desc:'Parkir terpusat menjaga pusat kawasan tetap lebih ramah pejalan kaki.',lens:'MOBILITY'},
+ '23':{role:'Gateway',desc:'Pintu masuk pertama menuju ekosistem kawasan.',lens:'DISCOVERY'},
+ '24':{role:'Circulation',desc:'Ring road mengatur akses kendaraan di perimeter kawasan.',lens:'MOBILITY'},
+ '25':{role:'Circular infrastructure',desc:'Utilitas dan sampah menjadi bagian dari sistem yang harus dikelola.',lens:'CIRCULAR INFRASTRUCTURE'}
 };
 
 export default function SpatialMapV2(){
@@ -99,8 +99,8 @@ export default function SpatialMapV2(){
   <div className="spatialV2Head">
    <div>
     <span>CORE BLUEPRINT · INTERACTIVE MAP</span>
-    <h2>Jelajahi kawasan<br/><i>seperti peta.</i></h2>
-    <p>Blueprint CORE adalah gambaran visi fisik jangka panjang. PUBLIC tidak mengklaim kawasan ini sudah terbangun; layer ini membantu pengunjung memahami tujuan besar dan langkah-langkah digital kecil yang sedang dikerjakan menuju ke sana.</p>
+    <h2>Jelajahi kawasan<br/><i>seperti sebuah cerita.</i></h2>
+    <p>Blueprint CORE adalah gambaran visi fisik jangka panjang. PUBLIC tidak mengklaim kawasan ini sudah terbangun. Setiap titik di sini adalah pintu cerita: fungsi zona, hubungan sistem, dan pertanyaan riset yang bisa membawa kita satu langkah lebih dekat.</p>
    </div>
    <div className="spatialV2Controls">
     <button className={view==='map'?'on':''} onClick={()=>setView('map')}>MAP</button>
@@ -140,7 +140,7 @@ export default function SpatialMapV2(){
          aria-label={p.name}
         >
          <i/>
-         {selected?.id===p.id&&<span className="mapPopup"><b>{p.name}</b><small>{p.type} · exploration layer</small><strong>{ROLE[p.id]?.role}</strong><em>{ROLE[p.id]?.desc}</em></span>}
+         {selected?.id===p.id&&<span className="mapPopup"><b>{p.name}</b><small>{p.type} · exploration layer</small><strong>{ROLE[p.id]?.role}</strong><em>{ROLE[p.id]?.desc}</em><small className="mapLens">RESEARCH LENS · {ROLE[p.id]?.lens}</small></span>}
         </button>
        )}
       </div>
