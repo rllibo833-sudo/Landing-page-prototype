@@ -94,13 +94,14 @@ export default function SpatialMapV2(){
  const transform=view==='bird'
   ? `translate(calc(-50% + ${pan.x}px),calc(-50% + ${pan.y}px)) scale(${zoom}) perspective(1100px) rotateX(48deg)`
   : `translate(calc(-50% + ${pan.x}px),calc(-50% + ${pan.y}px)) scale(${zoom})`;
+ const zoneList=POINTS.map(p=>({...p,...ROLE[p.id]}));
 
  return <section className="spatialV2" id="spatial-explorer">
   <div className="spatialV2Head">
    <div>
-    <span>CORE BLUEPRINT · INTERACTIVE MAP</span>
-    <h2>Jelajahi kawasan<br/><i>seperti sebuah cerita.</i></h2>
-    <p>Blueprint CORE adalah gambaran visi fisik jangka panjang. PUBLIC tidak mengklaim kawasan ini sudah terbangun. Setiap titik di sini adalah pintu cerita: fungsi zona, hubungan sistem, dan pertanyaan riset yang bisa membawa kita satu langkah lebih dekat.</p>
+    <span>CORE BLUEPRINT · MAP EXPLORER</span>
+    <h2>Lihat kawasannya.<br/><i>Pahami sistemnya.</i></h2>
+    <p>Di sini Anda melihat bentuk kawasan tanpa harus membaca seluruh legenda. Tap satu titik untuk membuka konteks; detail zona, data, dan pertanyaan riset ada di bawah sebagai lapisan terpisah.</p>
    </div>
    <div className="spatialV2Controls">
     <button className={view==='map'?'on':''} onClick={()=>setView('map')}>MAP</button>
@@ -130,7 +131,7 @@ export default function SpatialMapV2(){
       onPointerCancel={pointerUp}
     >
       <div className="blueprintLayer" style={{transform}}>
-       <img src={BLUEPRINT} alt="Blueprint Kawasan Masjid 1.000 Ha dari CORE" draggable="false"/>
+       <div className="blueprintMapCrop"><img src={BLUEPRINT} alt="Peta utama masterplan Kawasan Masjid 1.000 Ha" draggable="false"/></div>
        {POINTS.map(p=>
         <button
          key={p.id}
@@ -147,8 +148,12 @@ export default function SpatialMapV2(){
     </div>
 
     <div className="mapScale"><span>1.000 HA</span><i/></div>
-    <div className="mapAttribution">CORE · MASTER BLUEPRINT</div>
+    <div className="mapAttribution">CORE · MAP PRESENTATION</div>
    </div>
+  </div>
+  <div className="mapLegendSplit">
+   <div><span>MAP</span><h3>Satu gambar untuk orientasi.</h3><p>Legenda, data kawasan, dan detail fasilitas sengaja dipisahkan agar peta tetap mudah dibaca di layar Android.</p></div>
+   <div className="zoneDirectory">{zoneList.map(z=><button key={z.id} onClick={()=>setSelected(z)}><b>{z.id}</b><span>{z.name}</span><small>{z.lens}</small></button>)}</div>
   </div>
  </section>
 }
