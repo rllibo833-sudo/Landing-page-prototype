@@ -18,7 +18,7 @@ The experience follows:
 
 **VISUAL → CURIOSITY → INTERACTION → DISCOVERY → INFORMATION → OPPORTUNITY**
 
-The visual system is anchored by deep forest green, warm earth neutrals and restrained gold, with interactive ecosystem mapping, visual research objects, clear pathways and Android-first usability.
+The visual system uses bright product-grade signals (blue, green, coral, gold, white) while staying professional, with interactive ecosystem mapping, visual research objects, clear pathways and Android-first usability.
 
 ## Visitor routes
 
@@ -39,7 +39,11 @@ Founder OS: https://github.com/rllibo833-sudo/Founder-OS
 
 ## North Star
 
-Kawasan Masjid 1.000 Ha is a long-term vision for a mosque-centered community where eight systems reinforce one another:
+The **Kawasan Masjid Terpadu 1.000 Ha masterplan is the long-term destination, not a claim that the physical kawasan already exists.** Its 25 masterplan elements are the spatial reference for the future destination; PUBLIC groups them into eight connected digital/system lenses so visitors can understand the larger whole.
+
+The work happening now is intentionally smaller: research, software, AI, collaboration, opportunity discovery, pilots, evidence, and real economic experiments. These are **one of thousands of steps** that may eventually contribute to phased physical realization.
+
+Eight connected lenses:
 1. Worship & civic life
 2. Education & research
 3. Food & agriculture
@@ -49,7 +53,7 @@ Kawasan Masjid 1.000 Ha is a long-term vision for a mosque-centered community wh
 7. Digital ecosystem
 8. Housing & public life
 
-The digital layer is being built first because it can be researched, tested, measured, and improved before physical development begins.
+The digital layer is being built first because it can be researched, tested, measured, and improved before physical development begins. The rule is simple: **Vision → Small Step → Proof → Value → Realization.**
 
 ## First real economic experiment
 
